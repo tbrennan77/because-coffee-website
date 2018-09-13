@@ -110,3 +110,5 @@ Thumbs.db
 !wp-content/uploads/2018/
 !wp-content/uploads/uncode-fonts/
 !wp-content/themes/uncode-child/
+!gulpfile.js
+!package.json
