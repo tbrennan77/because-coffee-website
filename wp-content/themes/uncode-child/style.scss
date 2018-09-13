@@ -1,0 +1,34 @@
+/*
+Theme Name: Coffee theme
+Author: Tim Brennan
+Author URI: https://trygomedia.com
+Description: Why do we need this? #BecauseCoffee
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* -----------------------------------------
+	Table of Contents
+--------------------------------------------
+
+.. 01. General
+.. 02. Header
+.. 03. Modules
+.. 04. Footer
+.. 05. Comments
+.. 06. Widgets Styling
+.. 07. WordPress defaults
+.. 08. Utilities
+*/
+
+@import 'css/inc/variables';
+@import 'css/inc/mixins/mixins';
+@import 'css/inc/base';
+@import 'css/inc/header';
+@import 'css/inc/modules';
+@import 'css/inc/footer';
+@import 'css/inc/comments';
+@import 'css/inc/widgets';
+@import 'css/inc/wp-defaults';
+@import 'css/inc/utilities';

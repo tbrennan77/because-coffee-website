@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Tim Brennan",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.1.5",
@@ -16,5 +16,17 @@
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.1"
-  }
+  },
+  "dependencies": {
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://tbrennan77@bitbucket.org/trygomedia/web.git"
+  },
+  "keywords": [
+    "because",
+    "coffee"
+  ],
+  "homepage": "https://bitbucket.org/trygomedia/web#readme"
 }
