@@ -8,8 +8,8 @@ const groupmq = require('gulp-group-css-media-queries');
 const bs = require('browser-sync');
 
 const SASS_SOURCES = [
-  './*.scss', // This picks up our style.scss file at the root of the theme
-  'css/**/*.scss', // All other Sass files in the /css directory
+  './wp-content/themes/uncode-child/*.scss', // This picks up our style.scss file at the root of the theme
+  'css/**/*.scss',                           // All other Sass files in the /css directory
 ];
 
 /**
@@ -32,3 +32,21 @@ gulp.task('compile:sass', () =>
     .pipe(groupmq()) // Group media queries!
     .pipe(gulp.dest('.')) // Output compiled files in the same dir as Sass sources
     .pipe(bs.stream())); // Stream to browserSync
+
+
+
+/*
+ * Default task executed by running `gulp`
+ */
+gulp.task('default', ['watch:sass']);
+
+/**
+ * Watch Sass files for changes
+ */
+gulp.task('watch:sass', ['compile:sass'], () => {
+  bs.init({
+    proxy: 'http://localhost/coffee'
+  });
+
+  gulp.watch(SASS_SOURCES, ['compile:sass']);
+});
