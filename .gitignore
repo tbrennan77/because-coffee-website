@@ -109,6 +109,6 @@ Thumbs.db
 # !wp-content/plugins/example-plugin/
 !wp-content/uploads/2018/
 !wp-content/uploads/uncode-fonts/
-!wp-content/themes/coffee-child/
+!wp-content/themes/jumpstart-child/
 !gulpfile.js
 !package.json
