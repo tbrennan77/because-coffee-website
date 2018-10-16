@@ -8,7 +8,7 @@ const groupmq = require('gulp-group-css-media-queries');
 const bs = require('browser-sync');
 
 const SASS_SOURCES = [
-  './wp-content/themes/uncode-child/*.scss', // This picks up our style.scss file at the root of the theme
+  './wp-content/themes/jumpstart-child/*.scss', // This picks up our style.scss file at the root of the theme
   'css/**/*.scss',                           // All other Sass files in the /css directory
 ];
 
