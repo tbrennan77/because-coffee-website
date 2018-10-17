@@ -6,6 +6,7 @@ const autoprefixer = require('autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const groupmq = require('gulp-group-css-media-queries');
 const bs = require('browser-sync');
+const sassLint = require('gulp-sass-lint');
 
 const SASS_SOURCES = [
   './wp-content/themes/jumpstart-child/*.scss', // This picks up our style.scss file at the root of the theme
@@ -15,7 +16,7 @@ const SASS_SOURCES = [
 /**
  * Compile Sass files
  */
-gulp.task('compile:sass', () =>
+gulp.task('compile:sass', ['lint:sass'], () =>
   gulp.src(SASS_SOURCES, { base: './' })
     .pipe(plumber()) // Prevent termination on error
     .pipe(sass({
@@ -45,8 +46,16 @@ gulp.task('default', ['watch:sass']);
  */
 gulp.task('watch:sass', ['compile:sass'], () => {
   bs.init({
-    proxy: 'http://localhost:3000/'
+    proxy: 'http://localhost:8888/'
   });
 
-  gulp.watch(SASS_SOURCES, ['compile:sass']);
+  gulp.watch(SASS_SOURCES, ['compile:sass', 'lint:sass']);
 });
+/**
+ * Lint Sass
+ */
+gulp.task('lint:sass', () =>
+  gulp.src(SASS_SOURCES)
+    .pipe(plumber())
+    .pipe(sassLint())
+    .pipe(sassLint.format()));
