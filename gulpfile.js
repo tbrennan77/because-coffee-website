@@ -45,7 +45,7 @@ gulp.task('default', ['watch:sass']);
  */
 gulp.task('watch:sass', ['compile:sass'], () => {
   bs.init({
-    proxy: 'http://localhost:8888/'
+    proxy: 'http://localhost:3000/'
   });
 
   gulp.watch(SASS_SOURCES, ['compile:sass']);

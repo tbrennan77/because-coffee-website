@@ -1,0 +1,78 @@
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=2092813c-4f6f-4d28-9960-fda1f96e6aa0&fontids=1475814,1475826");
+
+@font-face{
+    font-family:"Futura Medium";
+    src:url("fonts/1475814/92596d86-eab0-4abb-ae87-3f8ee4d3dceb.eot?#iefix");
+    src:url("fonts/1475814/92596d86-eab0-4abb-ae87-3f8ee4d3dceb.eot?#iefix") format("eot"),url("fonts/1475814/2feabad2-d70f-4b3d-9a27-87bffac21bce.woff2") format("woff2"),url("fonts/1475814/f0ee8fd2-4e6c-4676-b99d-5995bd5d9cc8.woff") format("woff"),url("fonts/1475814/74b800bd-5c70-408f-951d-301b7a646abf.ttf") format("truetype");
+}
+@font-face{
+    font-family:"Futura Bold";
+    src:url("fonts/1475826/700bd18e-d9e0-45c5-93e2-7c930608c50e.eot?#iefix");
+    src:url("fonts/1475826/700bd18e-d9e0-45c5-93e2-7c930608c50e.eot?#iefix") format("eot"),url("fonts/1475826/12dbb46a-1b0b-40ee-80a6-4141c349b55f.woff2") format("woff2"),url("fonts/1475826/2abd55ef-07d0-473e-80e1-0e4066cd01fa.woff") format("woff"),url("fonts/1475826/c4fa8988-43d1-4a01-96e4-36c5c5a121c9.ttf") format("truetype");
+}
+
+html {
+	min-height: 100%;
+	position: relative;
+}
+body {
+	font-family: $font-stack;
+	color: $color-main;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; 
+	background-color: $color-white;
+}
+h1, h2, h3, h4, h5, .dummy-column h2, .dummy-column h3 {
+	font-family: $font-header;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+	letter-spacing: -.02em;
+}
+.tb-headline h1, .tb-headline h2, .tb-headline h3, .tb-headline h4, .tb-headline h5, .tb-headline h6 {
+	font-family: $font-header;
+}
+h1 {
+	/*
+	font-size: 3rem;
+	font-weight: lighter;
+	color: #fff;
+	*/
+}
+h2, .dummy-column h2 {
+	/*
+	font-size: 3rem;
+	font-weight: bold;
+	color: #3A3B3A;
+	*/
+}
+h3 {
+	color: rgba(58, 59, 58, 1);
+	font-size: 2rem;
+	font-weight: normal;
+}
+h4 {
+	color: rgba(58, 59, 58, 1);
+	font-size: 1.5rem;
+	font-weight: lighter;
+}
+h5 {
+	color: rgba(216, 51, 97, 1);
+	font-weight: italic;
+	font-size: 20px;
+}
+p, li {
+	font-family: "Futura Medium", "Lato", Arial, sans-serif;
+	font-size: 1.2rem;
+	line-height: 2rem;
+	font-weight: normal;
+}
+a {
+	color: #d93062;
+}
+a:not(.site-footer):hover, a:not(.site-footer):visited, a:not(.site-footer):active {
+	color: #d93062;
+}
+.tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
+	line-height: 1;
+}
