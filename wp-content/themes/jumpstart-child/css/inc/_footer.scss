@@ -1,0 +1,9 @@
+.site-footer h3 {
+	color: $color-white;
+	text-shadow: none;
+	font-size: 2em;
+}
+.site-footer a,
+a:not(.site-footer):hover, a:not(.site-footer):visited, a:not(.site-footer):active {
+	color: $color-white;
+}

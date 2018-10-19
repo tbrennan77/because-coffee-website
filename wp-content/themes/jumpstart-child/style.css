@@ -1,7 +1,7 @@
 /*
 Theme Name: Coffee Child
-Description: This is an example of a blank Jump Start child theme.
-Author: Your name here
+Description: Custom theme based on Jumpstart Framework
+Author: Tim Brennan
 Template: jumpstart
 */
 
@@ -19,12 +19,9 @@ Template: jumpstart
 .. 08. Utilities
 
 @import 'css/inc/mixins/mixins';
-
-@import 'css/inc/header';
 @import 'css/inc/modules';
-@import 'css/inc/footer';
+
 @import 'css/inc/comments';
-@import 'css/inc/widgets';
 @import 'css/inc/wp-defaults';
 @import 'css/inc/utilities';
 
@@ -32,17 +29,7 @@ Template: jumpstart
 
 @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=2092813c-4f6f-4d28-9960-fda1f96e6aa0&fontids=1475814,1475826");
 
-@font-face {
-  font-family: "Futura Medium";
-  src: url("fonts/1475814/92596d86-eab0-4abb-ae87-3f8ee4d3dceb.eot?#iefix");
-  src: url("fonts/1475814/92596d86-eab0-4abb-ae87-3f8ee4d3dceb.eot?#iefix") format("eot"), url("fonts/1475814/2feabad2-d70f-4b3d-9a27-87bffac21bce.woff2") format("woff2"), url("fonts/1475814/f0ee8fd2-4e6c-4676-b99d-5995bd5d9cc8.woff") format("woff"), url("fonts/1475814/74b800bd-5c70-408f-951d-301b7a646abf.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Futura Bold";
-  src: url("fonts/1475826/700bd18e-d9e0-45c5-93e2-7c930608c50e.eot?#iefix");
-  src: url("fonts/1475826/700bd18e-d9e0-45c5-93e2-7c930608c50e.eot?#iefix") format("eot"), url("fonts/1475826/12dbb46a-1b0b-40ee-80a6-4141c349b55f.woff2") format("woff2"), url("fonts/1475826/2abd55ef-07d0-473e-80e1-0e4066cd01fa.woff") format("woff"), url("fonts/1475826/c4fa8988-43d1-4a01-96e4-36c5c5a121c9.ttf") format("truetype");
-}
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:700");
 
 html {
   min-height: 100%;
@@ -88,8 +75,7 @@ h1 {
 	*/
 }
 
-h2,
-.dummy-column h2 {
+h2 {
   /*
 	font-size: 3rem;
 	font-weight: bold;
@@ -117,27 +103,23 @@ h5 {
 
 p,
 li {
-  font-family: "Futura Medium", "Lato", Arial, sans-serif;
+  font-family: "Futura Medium", "Lato", sans-serif;
   font-size: 1.2rem;
   line-height: 2rem;
   font-weight: normal;
 }
 
-a {
-  color: #d93062;
+@font-face {
+  font-family: "Futura Medium";
+  src: url("fonts/1475814/92596d86-eab0-4abb-ae87-3f8ee4d3dceb.eot?#iefix");
+  src: url("fonts/1475814/92596d86-eab0-4abb-ae87-3f8ee4d3dceb.eot?#iefix") format("eot"), url("fonts/1475814/2feabad2-d70f-4b3d-9a27-87bffac21bce.woff2") format("woff2"), url("fonts/1475814/f0ee8fd2-4e6c-4676-b99d-5995bd5d9cc8.woff") format("woff"), url("fonts/1475814/74b800bd-5c70-408f-951d-301b7a646abf.ttf") format("truetype");
 }
 
-a:not(.site-footer):hover,
-a:not(.site-footer):visited,
-a:not(.site-footer):active {
-  color: #d93062;
+@font-face {
+  font-family: "Futura Bold";
+  src: url("fonts/1475826/700bd18e-d9e0-45c5-93e2-7c930608c50e.eot?#iefix");
+  src: url("fonts/1475826/700bd18e-d9e0-45c5-93e2-7c930608c50e.eot?#iefix") format("eot"), url("fonts/1475826/12dbb46a-1b0b-40ee-80a6-4141c349b55f.woff2") format("woff2"), url("fonts/1475826/2abd55ef-07d0-473e-80e1-0e4066cd01fa.woff") format("woff"), url("fonts/1475826/c4fa8988-43d1-4a01-96e4-36c5c5a121c9.ttf") format("truetype");
 }
-
-.tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
-  line-height: 1;
-}
-
-/* Fonts */
 
 .grey {
   color: #dcddde;
@@ -145,6 +127,31 @@ a:not(.site-footer):active {
 
 .accent {
   color: #b45526;
+}
+
+.white {
+  color: white;
+}
+
+.site-header.transparent {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.site-header.transparent > .wrap {
+  border-bottom: 0px solid rgba(0, 0, 0, 0) !important;
+}
+
+.site-footer h3 {
+  color: white;
+  text-shadow: none;
+  font-size: 2em;
+}
+
+.site-footer a,
+a:not(.site-footer):hover,
+a:not(.site-footer):visited,
+a:not(.site-footer):active {
+  color: white;
 }
 
 /* forms */
@@ -155,4 +162,82 @@ a:not(.site-footer):active {
   text-transform: capitalize;
   font-family: "Futura Medium", "Lato", sans-serif;
   color: white !important;
+}
+
+.tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
+  line-height: 1;
+}
+
+.home-subscribe-section .featured-image img {
+  position: absolute;
+  top: -100px;
+  z-index: 999;
+  left: 80px;
+}
+
+.home-subscribe-section h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+  margin-top: -10px;
+  font-size: 5em;
+  text-shadow: none;
+  letter-spacing: .02em;
+  color: #b45526;
+}
+
+.home-subscribe-section h3 {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #434345;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-shadow: none;
+}
+
+.home-subscribe-section h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #434345;
+  font-size: 21px;
+  text-shadow: none;
+  letter-spacing: .02em;
+  margin-bottom: 0px;
+}
+
+.home-subscribe-section .btn {
+  font-size: 16px;
+}
+
+.home-subscribe-section .element-divider .tb-divider {
+  margin-bottom: 0px;
+}
+
+.why-because h2 {
+  font-family: "Futura Bold", "Lato", Arial, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: none;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.why-because p {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: white;
+}
+
+.tb-product .product-thumb {
+  background: #f5f5f5;
+  padding: 15px 0;
+}
+
+h2.woocommerce-loop-product__title {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #434345;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-shadow: none;
 }

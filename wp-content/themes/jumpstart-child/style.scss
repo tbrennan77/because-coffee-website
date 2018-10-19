@@ -1,7 +1,7 @@
 /*
 Theme Name: Coffee Child
-Description: This is an example of a blank Jump Start child theme.
-Author: Your name here
+Description: Custom theme based on Jumpstart Framework
+Author: Tim Brennan
 Template: jumpstart
 */
 
@@ -19,12 +19,9 @@ Template: jumpstart
 .. 08. Utilities
 
 @import 'css/inc/mixins/mixins';
-
-@import 'css/inc/header';
 @import 'css/inc/modules';
-@import 'css/inc/footer';
+
 @import 'css/inc/comments';
-@import 'css/inc/widgets';
 @import 'css/inc/wp-defaults';
 @import 'css/inc/utilities';
 
@@ -32,6 +29,10 @@ Template: jumpstart
 @import 'css/inc/variables';
 @import 'css/inc/base';
 @import 'css/inc/fonts';
+@import 'css/inc/header';
+@import 'css/inc/footer';
 @import 'css/inc/forms';
+@import 'css/inc/widgets';
+@import 'css/inc/woocommerce';
 
 
