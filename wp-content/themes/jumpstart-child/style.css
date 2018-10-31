@@ -50,12 +50,10 @@ h1,
 h2,
 h3,
 h4,
-h5,
-.dummy-column h2,
-.dummy-column h3 {
-  font-family: "Futura Bold", "Lato", Arial, sans-serif;
+h5 {
+  font-family: "Open Sans", "Lato", Arial, sans-serif;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
-  letter-spacing: -.02em;
+  letter-spacing: -.03em;
 }
 
 .tb-headline h1,
@@ -64,15 +62,12 @@ h5,
 .tb-headline h4,
 .tb-headline h5,
 .tb-headline h6 {
-  font-family: "Futura Bold", "Lato", Arial, sans-serif;
+  font-family: "Open Sans", "Lato", Arial, sans-serif;
 }
 
 h1 {
-  /*
-	font-size: 3rem;
-	font-weight: lighter;
-	color: #fff;
-	*/
+  font-weight: 900;
+  text-shadow: none;
 }
 
 h2 {
@@ -103,10 +98,11 @@ h5 {
 
 p,
 li {
-  font-family: "Futura Medium", "Lato", sans-serif;
-  font-size: 1.2rem;
-  line-height: 2rem;
-  font-weight: normal;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-weight: 500;
+  letter-spacing: -.02em;
 }
 
 @font-face {
@@ -157,11 +153,17 @@ a:not(.site-footer):active {
 /* forms */
 
 .btn {
-  border-radius: 5px;
+  font-family: "Open Sans", Arial, sans-serif;
+  border-radius: 3px;
   padding: 10px 20px;
   text-transform: capitalize;
-  font-family: "Futura Medium", "Lato", sans-serif;
   color: white !important;
+  font-size: 1rem;
+  letter-spacing: -.01em;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
 }
 
 .tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
@@ -182,7 +184,7 @@ a:not(.site-footer):active {
   margin-top: -10px;
   font-size: 5em;
   text-shadow: none;
-  letter-spacing: .02em;
+  letter-spacing: -.02em;
   color: #b45526;
 }
 
@@ -200,9 +202,9 @@ a:not(.site-footer):active {
   font-weight: 700;
   font-family: "Open Sans", Arial, sans-serif;
   color: #434345;
-  font-size: 21px;
+  font-size: 1.25rem;
   text-shadow: none;
-  letter-spacing: .02em;
+  letter-spacing: -.02em;
   margin-bottom: 0px;
 }
 
@@ -215,7 +217,7 @@ a:not(.site-footer):active {
 }
 
 .why-because h2 {
-  font-family: "Futura Bold", "Lato", Arial, sans-serif;
+  font-family: "Open Sans", "Lato", Arial, sans-serif;
   color: white;
   text-transform: uppercase;
   text-shadow: none;
@@ -240,4 +242,17 @@ h2.woocommerce-loop-product__title {
   text-transform: uppercase;
   font-weight: 100;
   text-shadow: none;
+}
+
+@media (min-width: 767px) {
+  p,
+  li {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .home-subscribe-section h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }

@@ -107,7 +107,7 @@ Thumbs.db
 # add your own entries here
 # !wp-content/mu-plugins/example-mu-plugin/
 # !wp-content/plugins/example-plugin/
-!wp-content/uploads/2018/
+!wp-content/uploads/2018
 !wp-content/themes/jumpstart-child/
 !gulpfile.js
 !package.json
