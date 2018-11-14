@@ -20,7 +20,6 @@ Template: jumpstart
 
 @import 'css/inc/mixins/mixins';
 @import 'css/inc/modules';
-
 @import 'css/inc/comments';
 @import 'css/inc/wp-defaults';
 @import 'css/inc/utilities';
@@ -99,10 +98,39 @@ h5 {
 p,
 li {
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1.4rem;
+  font-size: 1.15rem;
+  line-height: 1.5rem;
   font-weight: 500;
   letter-spacing: -.02em;
+}
+
+a:not(.site-footer):hover,
+a:not(.site-footer):visited,
+a:not(.site-footer):active {
+  color: #b45526;
+}
+
+a:not(.btn),
+a:not(.btn):visited {
+  background-color: transparent;
+  color: #b45526;
+  text-decoration: none;
+  -webkit-transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
+  border-bottom: 0px solid #dcddde;
+  -webkit-box-shadow: inset 0 -4px 0 #dcddde;
+  box-shadow: inset 0 -4px 0 #dcddde;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+a:not(.btn):hover {
+  color: #434345;
+  background: #dcddde;
+  border-bottom: 0px solid #dcddde;
+  -webkit-box-shadow: inset 0 -4px 0 #dcddde;
+  box-shadow: inset 0 -4px 0 #dcddde;
 }
 
 @font-face {
@@ -137,17 +165,49 @@ li {
   border-bottom: 0px solid rgba(0, 0, 0, 0) !important;
 }
 
+.site-footer > .wrap {
+  background: radial-gradient(#414141, #000000);
+}
+
 .site-footer h3 {
   color: white;
   text-shadow: none;
   font-size: 2em;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 900;
 }
 
-.site-footer a,
-a:not(.site-footer):hover,
-a:not(.site-footer):visited,
-a:not(.site-footer):active {
-  color: white;
+.site-footer.dark h4 {
+  color: #f5f5f5;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+  font-size: 1.15em;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 900;
+}
+
+.site-footer a {
+  color: #f5f5f5;
+}
+
+.site-footer .site-copyright a {
+  border-bottom-width: 0px;
+}
+
+.site-footer a {
+  color: white !important;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content .entry-content p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 600;
+}
+
+.footer-content > .wrap > .row > .col {
+  margin-top: 10px;
 }
 
 /* forms */
@@ -155,7 +215,7 @@ a:not(.site-footer):active {
 .btn {
   font-family: "Open Sans", Arial, sans-serif;
   border-radius: 3px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   text-transform: capitalize;
   color: white !important;
   font-size: 1rem;
@@ -164,6 +224,27 @@ a:not(.site-footer):active {
   text-transform: uppercase;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+}
+
+.btn:hover {
+  background-color: #434345;
+  color: white;
+}
+
+.btn-success {
+  background-color: #26b59d;
+}
+
+.btn-info {
+  background-color: #b45526;
+}
+
+.btn-success:hover {
+  background-color: #434345;
+}
+
+.btn-xxl {
+  font-size: 22px;
 }
 
 .tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
@@ -181,8 +262,8 @@ a:not(.site-footer):active {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Roboto Slab", serif;
-  margin-top: -10px;
-  font-size: 5em;
+  margin-top: 0px;
+  font-size: 4em;
   text-shadow: none;
   letter-spacing: -.02em;
   color: #b45526;
@@ -202,7 +283,7 @@ a:not(.site-footer):active {
   font-weight: 700;
   font-family: "Open Sans", Arial, sans-serif;
   color: #434345;
-  font-size: 1.25rem;
+  font-size: 2.5rem;
   text-shadow: none;
   letter-spacing: -.02em;
   margin-bottom: 0px;
@@ -230,6 +311,17 @@ a:not(.site-footer):active {
   color: white;
 }
 
+.slide-out-packaging {
+  max-width: 130%;
+  position: absolute;
+  left: -150px;
+  top: -20px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px !important;
+}
+
 .tb-product .product-thumb {
   background: #f5f5f5;
   padding: 15px 0;
@@ -244,15 +336,214 @@ h2.woocommerce-loop-product__title {
   text-shadow: none;
 }
 
-@media (min-width: 767px) {
+.site-copyright,
+.site-header.transparent,
+.site-footer {
+  display: none;
+}
+
+#landing-section-4,
+#landing-2-section-4 {
+  background: radial-gradient(#414141, #000000);
+}
+
+.get-you-some .tb-headline p:last-child {
+  color: #f5f5f5;
+}
+
+.get-you-some h4 {
+  padding: 20px;
+  color: #f5f5f5;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 900;
+}
+
+.tb-gforms-compat .gform_wrapper .top_label li.gfield {
+  margin-bottom: 0px;
+}
+
+body .gform_wrapper ul li.gfield {
+  margin-top: 0px;
+}
+
+.gform_wrapper .gfield_checkbox li label {
+  color: #f5f5f5;
+  padding-top: 8px;
+}
+
+#gform_submit_button_2 {
+  font-family: "Open Sans", Arial, sans-serif !important;
+  border-radius: 3px !important;
+  padding: 15px 20px !important;
+  text-transform: capitalize !important;
+  color: white !important;
+  font-size: 1rem !important;
+  letter-spacing: -.01em !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24) !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24) !important;
+  background: #b45526 !important;
+}
+
+#input_2_1,
+#input_2_2,
+#input_2_3 {
+  border-width: 0px !important;
+  background: transparent !important;
+  border-bottom: 3px solid #fff !important;
+  color: #f5f5f5 !important;
+  height: 60px !important;
+  font-size: 1.5em !important;
+  padding: 10px 0 !important;
+}
+
+#input_2_1,
+.coffeebecause {
+  font-family: 'Mali', cursive !important;
+}
+
+#input_2_2,
+#input_2_3 {
+  font-size: 1em !important;
+  height: 40px !important;
+}
+
+#input_2_1:focus,
+#input_2_2:focus,
+#input_2_3:focus {
+  -webkit-box-shadow: 0 0 0px rgba(200, 200, 200, 0.4) !important;
+  box-shadow: 0 0 0px rgba(200, 200, 200, 0.4) !important;
+  border-bottom-color: #b45526 !important;
+}
+
+#label_2_4_1 {
+  padding-top: 6px;
+  padding-left: 10px;
+}
+
+#gform_wrapper_2 {
+  margin: 0px;
+}
+
+.typeit h1 {
+  font-size: 3.65em;
+  text-transform: uppercase;
+}
+
+.because-coffee {
+  color: #b45526;
+  display: block;
+}
+
+.coffeebecause {
+  color: #f5f5f5;
+  font-size: 1.5em;
+  padding-top: 45px;
+  text-align: right;
+}
+
+.get-you-some h2 {
+  color: white;
+  text-shadow: 0 0px 0px rgba(0, 0, 0, 0), 0 0px 0px rgba(0, 0, 0, 0);
+  font-family: "Open Sans", "Lato", Arial, sans-serif;
+  font-size: 3em;
+}
+
+.get-you-some #field_2_1 .gfield_label {
+  color: white;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+.french-press {
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+}
+
+.french-press:hover {
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+
+.rotateY img {
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+}
+
+.rotateY:hover img {
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotateY(720deg);
+  -moz-transform: rotateY(720deg);
+}
+
+@media (max-width: 767px) {
   p,
   li {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: .85rem;
+    line-height: 1.75rem;
+  }
+
+  .home-subscribe-section h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
 
   .home-subscribe-section h4 {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .slide-out-packaging {
+    display: none;
+  }
+
+  .tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
+    font-size: 3.5rem;
+  }
+
+  #gform_submit_button_2 {
+    padding: 5px 15px !important;
+    font-size: 1.5em !important;
+  }
+
+  #input_2_1 {
+    height: 40px !important;
+  }
+
+  #input_2_2,
+  #input_2_3 {
+    font-size: 2em !important;
+  }
+
+  #label_2_4_1 {
+    font-size: 1em;
+  }
+
+  .coffeebecause {
+    text-align: left;
+    padding-top: 25px;
+  }
+
+  .tb-gforms-compat .gform_wrapper .top_label li.gfield.gf_left_half,
+  .tb-gforms-compat .gform_wrapper .top_label li.gfield.gf_right_half {
+    text-align: left;
+    display: block;
+    width: 100%;
   }
 }
