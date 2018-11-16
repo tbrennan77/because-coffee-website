@@ -30,6 +30,32 @@ Template: jumpstart
 
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:700");
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+
+@font-face {
+  font-family: "Futura Medium";
+  src: url("fonts/1475814/92596d86-eab0-4abb-ae87-3f8ee4d3dceb.eot?#iefix");
+  src: url("fonts/1475814/92596d86-eab0-4abb-ae87-3f8ee4d3dceb.eot?#iefix") format("eot"), url("fonts/1475814/2feabad2-d70f-4b3d-9a27-87bffac21bce.woff2") format("woff2"), url("fonts/1475814/f0ee8fd2-4e6c-4676-b99d-5995bd5d9cc8.woff") format("woff"), url("fonts/1475814/74b800bd-5c70-408f-951d-301b7a646abf.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Bold";
+  src: url("fonts/1475826/700bd18e-d9e0-45c5-93e2-7c930608c50e.eot?#iefix");
+  src: url("fonts/1475826/700bd18e-d9e0-45c5-93e2-7c930608c50e.eot?#iefix") format("eot"), url("fonts/1475826/12dbb46a-1b0b-40ee-80a6-4141c349b55f.woff2") format("woff2"), url("fonts/1475826/2abd55ef-07d0-473e-80e1-0e4066cd01fa.woff") format("woff"), url("fonts/1475826/c4fa8988-43d1-4a01-96e4-36c5c5a121c9.ttf") format("truetype");
+}
+
+.grey {
+  color: #dcddde;
+}
+
+.accent {
+  color: #b45526;
+}
+
+.white {
+  color: white;
+}
+
 html {
   min-height: 100%;
   position: relative;
@@ -99,7 +125,7 @@ p,
 li {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 1.15rem;
-  line-height: 1.5rem;
+  line-height: 1.5;
   font-weight: 500;
   letter-spacing: -.02em;
 }
@@ -131,30 +157,6 @@ a:not(.btn):hover {
   border-bottom: 0px solid #dcddde;
   -webkit-box-shadow: inset 0 -4px 0 #dcddde;
   box-shadow: inset 0 -4px 0 #dcddde;
-}
-
-@font-face {
-  font-family: "Futura Medium";
-  src: url("fonts/1475814/92596d86-eab0-4abb-ae87-3f8ee4d3dceb.eot?#iefix");
-  src: url("fonts/1475814/92596d86-eab0-4abb-ae87-3f8ee4d3dceb.eot?#iefix") format("eot"), url("fonts/1475814/2feabad2-d70f-4b3d-9a27-87bffac21bce.woff2") format("woff2"), url("fonts/1475814/f0ee8fd2-4e6c-4676-b99d-5995bd5d9cc8.woff") format("woff"), url("fonts/1475814/74b800bd-5c70-408f-951d-301b7a646abf.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Futura Bold";
-  src: url("fonts/1475826/700bd18e-d9e0-45c5-93e2-7c930608c50e.eot?#iefix");
-  src: url("fonts/1475826/700bd18e-d9e0-45c5-93e2-7c930608c50e.eot?#iefix") format("eot"), url("fonts/1475826/12dbb46a-1b0b-40ee-80a6-4141c349b55f.woff2") format("woff2"), url("fonts/1475826/2abd55ef-07d0-473e-80e1-0e4066cd01fa.woff") format("woff"), url("fonts/1475826/c4fa8988-43d1-4a01-96e4-36c5c5a121c9.ttf") format("truetype");
-}
-
-.grey {
-  color: #dcddde;
-}
-
-.accent {
-  color: #b45526;
-}
-
-.white {
-  color: white;
 }
 
 .site-header.transparent {
@@ -338,12 +340,19 @@ h2.woocommerce-loop-product__title {
 
 .site-copyright,
 .site-header.transparent,
-.site-footer {
+.site-footer,
+.mobile-nav,
+.gform_wrapper .gfield_required {
   display: none;
 }
 
+.tb-gforms-compat .gform_wrapper .top_label > li .gfield_label {
+  display: none !important;
+}
+
 #landing-section-4,
-#landing-2-section-4 {
+#landing-2-section-4,
+#coming-soon-section-3 {
   background: radial-gradient(#414141, #000000);
 }
 
@@ -356,6 +365,12 @@ h2.woocommerce-loop-product__title {
   color: #f5f5f5;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 900;
+}
+
+.tiny-doug {
+  position: absolute;
+  top: -100px;
+  right: -20px;
 }
 
 .tb-gforms-compat .gform_wrapper .top_label li.gfield {
@@ -427,8 +442,10 @@ body .gform_wrapper ul li.gfield {
 }
 
 .typeit h1 {
-  font-size: 3.65em;
+  font-size: 3.5em;
   text-transform: uppercase;
+  height: 150px;
+  line-height: .9;
 }
 
 .because-coffee {
@@ -492,10 +509,24 @@ body .gform_wrapper ul li.gfield {
   -moz-transform: rotateY(720deg);
 }
 
+@media (max-width: 991px) {
+  .tb-bg-video {
+    display: block;
+  }
+}
+
 @media (max-width: 767px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    line-height: 1;
+  }
+
   p,
   li {
-    font-size: .85rem;
+    font-size: 1rem;
     line-height: 1.75rem;
   }
 
@@ -517,6 +548,10 @@ body .gform_wrapper ul li.gfield {
     font-size: 3.5rem;
   }
 
+  .tiny-doug-headline {
+    border-bottom: 3px solid #ccc;
+  }
+
   #gform_submit_button_2 {
     padding: 5px 15px !important;
     font-size: 1.5em !important;
@@ -533,6 +568,12 @@ body .gform_wrapper ul li.gfield {
 
   #label_2_4_1 {
     font-size: 1em;
+  }
+
+  .typeit h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    height: 150px;
   }
 
   .coffeebecause {
