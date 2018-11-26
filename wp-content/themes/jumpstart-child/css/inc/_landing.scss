@@ -1,12 +1,12 @@
-.site-copyright,
-.site-header.transparent,
-.site-footer,
-.mobile-nav,
-.gform_wrapper .gfield_required {
+.custom-layout-coming-soon .site-copyright,
+.custom-layout-coming-soon .site-header.transparent,
+.custom-layout-coming-soon .site-footer,
+.custom-layout-coming-soon .mobile-nav,
+.custom-layout-coming-soon .gform_wrapper .gfield_required {
 	display: none;
 }
 
-.tb-gforms-compat .gform_wrapper .top_label>li .gfield_label {
+.custom-layout-coming-soon .tb-gforms-compat .gform_wrapper .top_label>li .gfield_label {
 	display: none !important;
 }
 
@@ -42,7 +42,7 @@
 
 .tiny-doug {
     position: absolute;
-    top: -100px;
+    top: -80px;
     right: -20px;
 }
 
@@ -87,22 +87,22 @@ body .gform_wrapper ul li.gfield {
     font-size: 1.5em !important;
     padding: 10px 0 !important;
 }
-#input_2_1 {
+#input_2_1xxx {
 	@media (max-width: 767px) { 
-	  	height: 40px !important;
+	 
 	}
 }
 #input_2_1,
+#input_2_2,
+#input_2_3,
 .coffeebecause {
 	font-family: 'Mali', cursive !important;
 }
 #input_2_2,
 #input_2_3 {
-	font-size: 1em !important;
-	height: 40px !important;
 
     @media (max-width: 767px) { 
-    	font-size: 2em !important;
+    	
     }
 }
 #input_2_1:focus,

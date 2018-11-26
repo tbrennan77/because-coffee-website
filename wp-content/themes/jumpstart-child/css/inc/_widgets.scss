@@ -18,6 +18,8 @@
 	    text-shadow: none;
 		letter-spacing: -.02em;
 		color: $color-accent;
+		line-height: .9;
+		margin-top: 20px;
 
 		@media (max-width: 767px) {
 			font-size: 2.5rem;
@@ -33,11 +35,11 @@
 	    text-shadow: none;
 	}
 	h4 {
-		text-transform: uppercase;
-		font-weight: 700;
+		text-transform: capitalize;
+		font-weight: 500;
 		font-family: $font-stack;
 		color: $color-main;
-		font-size: 2.5rem;
+		font-size: 1.15rem;
     	text-shadow: none;
     	letter-spacing: -.02em;
     	margin-bottom: 0px;

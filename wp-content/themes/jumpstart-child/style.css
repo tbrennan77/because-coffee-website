@@ -23,7 +23,6 @@ Template: jumpstart
 @import 'css/inc/comments';
 @import 'css/inc/wp-defaults';
 @import 'css/inc/utilities';
-
 */
 
 @import url("https://fast.fonts.net/lt/1.css?apiType=css&c=2092813c-4f6f-4d28-9960-fda1f96e6aa0&fontids=1475814,1475826");
@@ -122,22 +121,24 @@ h5 {
 }
 
 p,
+.tb-jumbotron p,
+.jumbotron p,
 li {
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 1.15rem;
-  line-height: 1.5;
+  font-size: 1em;
+  line-height: 1.4;
   font-weight: 500;
   letter-spacing: -.02em;
 }
 
-a:not(.site-footer):hover,
-a:not(.site-footer):visited,
-a:not(.site-footer):active {
+a:not(.site-footer, .menu-btn):hover,
+a:not(.site-footer, .menu-btn):visited,
+a:not(.site-footer, .menu-btn):active {
   color: #b45526;
 }
 
-a:not(.btn),
-a:not(.btn):visited {
+a:not(.btn, .menu-btn),
+a:not(.btn, .menu-btn):visited {
   background-color: transparent;
   color: #b45526;
   text-decoration: none;
@@ -151,7 +152,7 @@ a:not(.btn):visited {
   word-wrap: break-word;
 }
 
-a:not(.btn):hover {
+a:not(.btn, .menu-btn):hover {
   color: #434345;
   background: #dcddde;
   border-bottom: 0px solid #dcddde;
@@ -269,6 +270,8 @@ a:not(.btn):hover {
   text-shadow: none;
   letter-spacing: -.02em;
   color: #b45526;
+  line-height: .9;
+  margin-top: 20px;
 }
 
 .home-subscribe-section h3 {
@@ -281,11 +284,11 @@ a:not(.btn):hover {
 }
 
 .home-subscribe-section h4 {
-  text-transform: uppercase;
-  font-weight: 700;
+  text-transform: capitalize;
+  font-weight: 500;
   font-family: "Open Sans", Arial, sans-serif;
   color: #434345;
-  font-size: 2.5rem;
+  font-size: 1.15rem;
   text-shadow: none;
   letter-spacing: -.02em;
   margin-bottom: 0px;
@@ -338,15 +341,15 @@ h2.woocommerce-loop-product__title {
   text-shadow: none;
 }
 
-.site-copyright,
-.site-header.transparent,
-.site-footer,
-.mobile-nav,
-.gform_wrapper .gfield_required {
+.custom-layout-coming-soon .site-copyright,
+.custom-layout-coming-soon .site-header.transparent,
+.custom-layout-coming-soon .site-footer,
+.custom-layout-coming-soon .mobile-nav,
+.custom-layout-coming-soon .gform_wrapper .gfield_required {
   display: none;
 }
 
-.tb-gforms-compat .gform_wrapper .top_label > li .gfield_label {
+.custom-layout-coming-soon .tb-gforms-compat .gform_wrapper .top_label > li .gfield_label {
   display: none !important;
 }
 
@@ -369,7 +372,7 @@ h2.woocommerce-loop-product__title {
 
 .tiny-doug {
   position: absolute;
-  top: -100px;
+  top: -80px;
   right: -20px;
 }
 
@@ -414,14 +417,10 @@ body .gform_wrapper ul li.gfield {
 }
 
 #input_2_1,
+#input_2_2,
+#input_2_3,
 .coffeebecause {
   font-family: 'Mali', cursive !important;
-}
-
-#input_2_2,
-#input_2_3 {
-  font-size: 1em !important;
-  height: 40px !important;
 }
 
 #input_2_1:focus,
@@ -525,6 +524,8 @@ body .gform_wrapper ul li.gfield {
   }
 
   p,
+  .tb-jumbotron p,
+  .jumbotron p,
   li {
     font-size: 1rem;
     line-height: 1.75rem;
@@ -555,15 +556,6 @@ body .gform_wrapper ul li.gfield {
   #gform_submit_button_2 {
     padding: 5px 15px !important;
     font-size: 1.5em !important;
-  }
-
-  #input_2_1 {
-    height: 40px !important;
-  }
-
-  #input_2_2,
-  #input_2_3 {
-    font-size: 2em !important;
   }
 
   #label_2_4_1 {

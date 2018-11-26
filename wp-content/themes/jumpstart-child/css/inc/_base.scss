@@ -58,10 +58,13 @@ h5 {
 	font-weight: italic;
 	font-size: 20px;
 }
-p, li {
+p, 
+.tb-jumbotron p, 
+.jumbotron p,
+li {
 	font-family: $font-stack;
-	font-size: 1.15rem;
-    line-height: 1.5;
+	font-size: 1em;
+    line-height: 1.4;
 	font-weight: 500;
 	letter-spacing: -.02em;
 
@@ -71,14 +74,14 @@ p, li {
 	}
 }
 
-a:not(.site-footer):hover, 
-a:not(.site-footer):visited, 
-a:not(.site-footer):active {
+a:not(.site-footer, .menu-btn):hover, 
+a:not(.site-footer, .menu-btn):visited, 
+a:not(.site-footer, .menu-btn):active {
 	color: $color-accent;
 }
 
-a:not(.btn),
-a:not(.btn):visited {
+a:not(.btn, .menu-btn),
+a:not(.btn, .menu-btn):visited {
 	background-color: transparent;
     color: $color-accent;
     text-decoration: none;
@@ -92,7 +95,7 @@ a:not(.btn):visited {
     word-break: break-word;
     word-wrap: break-word;
 }
-a:not(.btn):hover {
+a:not(.btn, .menu-btn):hover {
 	color: $color-main;
 	background: $color-light;
 	border-bottom: 0px solid $color-light;
