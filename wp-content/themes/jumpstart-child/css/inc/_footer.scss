@@ -1,12 +1,33 @@
 .site-footer>.wrap {
-	background: radial-gradient(#414141, #000000);
+	// background: radial-gradient(#414141, #000000);
+	background-color: $color-main;
 }
 .site-footer h3 {
 	color: $color-white;
 	text-shadow: none;
-	font-size: 2em;
+	font-size: 1.5em;
     font-family: $font-stack;
     font-weight: 900;
+    text-align: left;
+}
+.site-footer ul {
+	list-style-type: none;
+    padding-left: 0;
+
+    li {
+    	text-align: left;
+    	margin-bottom: 0.375rem;
+    }
+
+    li a {
+    	font-size: 1rem;
+    	line-height: 1.5;
+    }
+
+    li a:hover {
+    	border-bottom: 3px solid $color-accent;
+    	color: $color-white;
+    }
 }
 .site-footer.dark h4 {
     color: $color-lighter;
@@ -16,7 +37,7 @@
     font-weight: 900;
 }
 .site-footer a {
-	color: $color-lighter;
+	color: $color-light;
 }
 .site-footer .site-copyright a {
 	border-bottom-width: 0px;
@@ -33,4 +54,104 @@
 }
 .footer-content>.wrap>.row>.col {
 	margin-top: 10px;
+}
+.footer-nav {
+	li a {
+		@media (max-width: 992px) {
+			display: block;
+		}
+		@media (max-width: 767px) {
+			border-bottom: 1px solid $color-light;
+    		min-height: 30px;
+		}
+	}
+}
+.footer-nav-shop {
+	li a {
+		@media (max-width: 992px) {
+			display: block;
+		}
+		@media (max-width: 767px) {
+			border-bottom: 1px solid $color-light;
+	    	min-height: 30px;
+		}
+	}
+}
+.footer-stay-up {
+	text-align: left;
+
+	li {
+		display: inline;
+	}
+	.li-i {
+		padding: 7px;
+	}
+	.becausecoffee {
+		font-size: .8rem;
+		font-weight: bold;
+	}
+}
+.footer-contact-us {
+	text-align: left;
+	margin-top: 40px;
+
+	li a {
+		font-size: .8rem !important;
+		text-transform: none;
+	}
+
+	i, svg, .svg-inline--fa {
+		font-size: 24px;
+    	margin: 7px;
+	}
+}
+#gform_3 {
+	margin-left: 0;
+
+	.gform_body {
+		width: 80%;
+		max-width: 80%;
+	}
+}
+#gform_submit_button_3 {
+	width: 75px;
+}
+#gform_wrapper_3 {
+	.gfield_label {
+		display: none;
+	}
+	#input_3_3 {
+		background-color: transparent;
+	    border-width: 0px;
+	    border-bottom: 3px solid $color-light;
+	    font-size: 1rem;
+	    color: $color-white;
+	    font-weight: bold;
+	    letter-spacing: -.02em;
+	}
+	#input_3_3:active,
+	#input_3_3:focus {
+		border-bottom: 3px solid $color-accent;
+		box-shadow: none;
+	}
+	#gform_submit_button_3 {
+		text-transform: capitalize;
+	    font-weight: bold;
+	    letter-spacing: -.02em;
+	    color: #fff;
+	    background-color: #b54426;
+	    padding: 8px 13px;
+	    border-radius: 3px;
+	}
+}
+.footer-contact-us-mobile {
+	display: block;
+
+	@media (min-width: 767px) {
+		display: none;
+	}
+}
+
+.site-copyright {
+	display: none;
 }

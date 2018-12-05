@@ -5,13 +5,16 @@ html {
 
 body {
 	font-family: $font-stack;
-	color: $color-main;
+	color: $color-light;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	-o-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale; 
 	background-color: $color-white;
 }
+
+// responsive images and elements
+embed, iframe, img, object, video { max-width: 100%; }
 
 h1, h2, h3, h4, h5 {
 	font-family: $font-header;
