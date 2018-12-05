@@ -28,6 +28,12 @@
     	border-bottom: 3px solid $color-accent;
     	color: $color-white;
     }
+
+    .btn:hover {
+    	background-color: $color-lighter;
+    	border-bottom-width: 0px;
+    	color: $color-accent !important;
+    }
 }
 .site-footer.dark h4 {
     color: $color-lighter;

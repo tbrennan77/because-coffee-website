@@ -48,7 +48,7 @@ html {
 
 body {
   font-family: "Open Sans", Arial, sans-serif;
-  color: #dcddde;
+  color: #434345;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
@@ -334,6 +334,12 @@ a:not(.btn, .menu-btn):hover {
   color: white;
 }
 
+.site-footer ul .btn:hover {
+  background-color: #f5f5f5;
+  border-bottom-width: 0px;
+  color: #b45526 !important;
+}
+
 .site-footer.dark h4 {
   color: #f5f5f5;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
@@ -464,7 +470,7 @@ a:not(.btn, .menu-btn):hover {
   font-size: 1rem;
   letter-spacing: -.01em;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: none;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
 }
@@ -556,11 +562,44 @@ a:not(.btn, .menu-btn):hover {
   color: white;
 }
 
-.slide-out-packaging {
-  max-width: 130%;
+.local-coffee h1 {
+  font-size: 5em;
+  letter-spacing: -.06em;
+}
+
+.doug-pouring img {
+  max-width: 100%;
   position: absolute;
   left: -150px;
-  top: -20px;
+  top: -22px;
+}
+
+.shop-or-subscribe h2 {
+  font-size: 4em;
+  font-family: "Roboto Slab", serif;
+  color: #b45526;
+  text-transform: uppercase;
+}
+
+.testimonial_rotator_wrap {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.testimonial_rotator_quote {
+  font-size: 32px;
+  line-height: 1.125;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #b45526;
+  letter-spacing: -.02em;
+}
+
+.testimonial_rotator.template-longform .testimonial_rotator_author_info p {
+  color: #434345;
+  font-weight: 900;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.3333;
 }
 
 .margin-bottom-20 {
@@ -820,7 +859,7 @@ body .gform_wrapper ul li.gfield {
     line-height: 2rem;
   }
 
-  .slide-out-packaging {
+  .doug-pouring img {
     display: none;
   }
 

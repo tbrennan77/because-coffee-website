@@ -72,17 +72,49 @@
 	}
 }
 
-.slide-out-packaging {
-	max-width: 130%;
+.local-coffee {
+	h1 {
+		font-size: 5em;
+    	letter-spacing: -.06em;
+	}
+}
+.doug-pouring img {
+	max-width: 100%;
     position: absolute;
     left: -150px;
-    top: -20px;
+    top: -22px;
 
     @media (max-width: 767px) {
 		display: none;
 	}
 }
+.shop-or-subscribe {
+	h2 {
+		font-size: 4em;
+    	font-family: $font-roboto;
+    	color: $color-accent;
+    	text-transform: uppercase;
+	}
+}
 
+.testimonial_rotator_wrap {
+	max-width: 500px;
+	margin: 0 auto;
+}
+.testimonial_rotator_quote {
+	font-size: 32px;
+    line-height: 1.125;
+    font-family: $font-stack;
+    color: $color-accent;
+    letter-spacing: -.02em;
+}
+.testimonial_rotator.template-longform .testimonial_rotator_author_info p {
+	color: $color-main;
+	font-weight: 900;
+	font-family: $font-stack;
+	font-size: 18px;
+    line-height: 1.3333;
+}
 .tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
 	@media (max-width: 767px) {
 		font-size: 3rem;
