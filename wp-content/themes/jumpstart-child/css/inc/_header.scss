@@ -63,9 +63,6 @@
 .tb-mobile-header {
 	.site-logo {
 	    margin: 0 10px 0 0;
-	    background-color: $color-main;
-	    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
-	    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
 	    padding: 20px 30px 15px 30px;
 	    max-width: none !important;
 	}
@@ -137,4 +134,27 @@
 }
 .menu-sticky .howmanyproducts {
 	color: $color-accent;
+}
+
+.tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
+	font-size: 72px;
+    line-height: 64px;
+    color: $color-white;
+    //max-width: 330px;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 20px;
+    text-shadow: $text-shadow;
+
+    @media (min-width: 992px) {
+		font-size: 180px;
+    	line-height: 160px;
+    	//max-width: 908px;
+	}
+	@media (min-width: 768px) {
+		font-size: 140px;
+	    line-height: 120px;
+	    //max-width: 640px;
+	    margin-bottom: 48px;
+	}
 }

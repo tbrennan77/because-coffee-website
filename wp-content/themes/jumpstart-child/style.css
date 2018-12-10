@@ -13,7 +13,7 @@ Template: jumpstart
 .. 02. Header
 .. 03. Modules
 .. 04. Footer
-.. 05. Comments
+.. 05. Comments	
 .. 06. Widgets Styling
 .. 07. WordPress defaults
 .. 08. Utilities
@@ -225,9 +225,6 @@ a:not(.btn, .menu-btn):hover {
 
 .tb-mobile-header .site-logo {
   margin: 0 10px 0 0;
-  background-color: #434345;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
   padding: 20px 30px 15px 30px;
   max-width: none !important;
 }
@@ -299,6 +296,16 @@ a:not(.btn, .menu-btn):hover {
 
 .menu-sticky .howmanyproducts {
   color: #b45526;
+}
+
+.tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
+  font-size: 72px;
+  line-height: 64px;
+  color: white;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
 }
 
 .site-footer > .wrap {
@@ -790,6 +797,21 @@ body .gform_wrapper ul li.gfield {
 @media (min-width: 767px) {
   .footer-contact-us-mobile {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
+    font-size: 140px;
+    line-height: 120px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
+    font-size: 180px;
+    line-height: 160px;
   }
 }
 
