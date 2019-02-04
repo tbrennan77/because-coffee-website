@@ -2,10 +2,10 @@
 .btn {
 	font-family: $font-stack;
     border-radius: 3px;
-    padding: 15px 20px;
+    padding: 8px 20px;
     text-transform: capitalize;
     color: white !important;
-    font-size: 1rem;
+    font-size: 1em;
     letter-spacing: -.01em;
     font-weight: 700;
     text-transform: none;
@@ -31,4 +31,22 @@
 }
 .btn-xxl {
 	font-size: 22px;
+}
+.btn-primary {
+    background-color: transparent;
+    border: 2px solid $color-accent !important;
+    color: $color-accent !important;
+}
+.btn-primary:hover {
+    background-color: $color-accent;
+    color: $color-white !important;
+}
+.home .hero .btn-danger {
+    background-color: transparent;
+    border: 2px solid $color-white;
+    color: $color-white;
+}
+.home .hero .btn-danger:hover {
+    color: $color-accent !important;
+    background-color: $color-white;
 }
