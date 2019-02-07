@@ -86,6 +86,10 @@ li {
 .tb-jumbotron p {
 	font-size: 1.5em;
 }
+a:hover {
+	color: $color-main;
+	border-bottom: 2px solid $color-accent;
+}
 a:not(.site-footer, .menu-btn):hover, 
 a:not(.site-footer, .menu-btn):visited, 
 a:not(.site-footer, .menu-btn):active {
