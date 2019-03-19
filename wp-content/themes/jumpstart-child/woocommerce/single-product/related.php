@@ -28,12 +28,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<h3>Bag Size</h3>
 				<h2><?php the_field('bag_size'); ?></h2>
 			</div>
+			<?php if( get_field('flavor_notes_image') ): ?>
 			<div class="col-sm-4 text-center coffee_attribute">
 				<img src="<?php the_field('flavor_notes_image'); ?>" alt="" />
 				<h3>Flavor Notes</h3>
 				<h2><?php the_field('tasting_summary'); ?></h2>
 				<p><?php the_field('flavor_notes'); ?></p>
 			</div>
+			<?php endif; ?>
+			<?php if( get_field('tasting_summary_image') ): ?>
 			<div class="col-sm-4 text-center coffee_attribute">
 				<img src="<?php the_field('tasting_summary_image'); ?>" alt="" />
 				<h3>Roast Level</h3>
@@ -41,12 +44,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 					echo $field['label']; ?></h2>
 				<p></p>
 			</div>
+			<?php endif; ?>
+			<?php if( get_field('kick_it_up_image') ): ?>
 			<div class="col-sm-4 text-center coffee_attribute">
 				<img src="<?php the_field('kick_it_up_image'); ?>" alt="" />
 				<h3>Kick It Up a Notch With</h3>
 				<h2><?php the_field('kick_it_up_with'); ?></h2>
 				<p><a href="<?php the_field('kick_it_up_link'); ?>">Learn how</a></p>
 			</div>
+			<?php endif; ?>
 		</div>
 	</div>
 </section>
@@ -54,22 +60,36 @@ if ( ! defined( 'ABSPATH' ) ) {
 <section class="coffee_nerd_attributes nerd_stuff row-full">
 	<div class="container-fluid">
 		<div class="row">
+			<?php if( get_field('origin_country_image') ) { ?>
 			<div class="col-sm-4 origin-country">
 				<img src="<?php the_field('origin_country_image'); ?>" alt="" />
 			</div>
 			<div class="col-sm-8 origin-details">
+			<?php } else { ?>
+				<div class="col-sm-12 origin-details">
+			<?php } ?>
 				<h2>The Details</h2>
 				<dl>
+				  <?php if( get_field('region') ): ?>
 				  <dt>Region</dt>
 				  <dd><?php the_field('region'); ?></dd>
+				  <?php endif; ?>
+				  <?php if( get_field('varietal') ): ?>
 				  <dt>Varietal</dt>
 				  <dd><?php the_field('varietal'); ?></dd>
+				  <?php endif; ?>
+				  <?php if( get_field('altitude') ): ?>
 				  <dt>Altitude</dt>
 				  <dd><?php the_field('altitude'); ?></dd>
+				  <?php endif; ?>
+				  <?php if( get_field('process') ): ?>
 				  <dt>Process</dt>
 				  <dd><?php the_field('process'); ?></dd>
+				  <?php endif; ?>
+				  <?php if( get_field('importers_notes') ): ?>
 				  <dt>Importer's notes</dt>
 				  <dd><?php the_field('importers_notes'); ?></dd>
+				  <?php endif; ?>
 				</dl>
 			</div>
 		</div>

@@ -58,6 +58,8 @@ h3 {
 	color: rgba(58, 59, 58, 1);
 	font-size: 2rem;
 	font-weight: normal;
+	text-shadow: $text-shadow-none;
+	margin-bottom: 10px;
 }
 h4 {
 	color: rgba(58, 59, 58, 1);
@@ -86,13 +88,20 @@ li {
 .tb-jumbotron p {
 	font-size: 1.5em;
 }
-a:hover {
+a:not(.site-header):not(.menu-btn):hover {
 	color: $color-main;
 	border-bottom: 2px solid $color-accent;
 }
-a:not(.site-footer, .menu-btn):hover, 
-a:not(.site-footer, .menu-btn):visited, 
-a:not(.site-footer, .menu-btn):active {
+.header-nav .tb-primary-menu > li > .wpmenucart-contents:before {
+	background-color: transparent;
+}
+.header-nav .tb-primary-menu > li > .wpmenucart-contents:hover {
+	color: $color-accent;
+}
+a:not(.site-footer):not(.menu-btn):not(.tb-image-logo):hover, 
+a:not(.site-footer):not(.menu-btn):not(.tb-image-logo):visited, 
+a:not(.site-footer):not(.menu-btn):not(.tb-image-logo):active,
+a:not(.alt) {
 	color: $color-accent;
 }
 
@@ -111,7 +120,7 @@ a:not(.btn, .menu-btn):visited {
     word-break: break-word;
     word-wrap: break-word;
 }
-a:not(.btn, .menu-btn):hover {
+a:not(.btn):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):hover {
 	color: $color-main;
 	background: $color-light;
 	border-bottom: 0px solid $color-light;
@@ -129,4 +138,16 @@ a:not(.btn, .menu-btn):hover {
     position: relative;
     margin-left: -50vw;
     left: 50%;
+}
+.lower {
+	text-transform: none;
+}
+
+.hero-gradient {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+47,ededed+100;White+3D+%231 */
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }

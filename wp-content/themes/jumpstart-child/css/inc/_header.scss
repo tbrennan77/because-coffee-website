@@ -7,6 +7,9 @@
 .header-content .site-logo {
     margin: 0 10px 0 10px;
 }
+.header-content .site-logo a:hover {
+	border-bottom-width: 0px;
+}
 /* make the header full-width */
 .header-content>.wrap {
 	max-width: none;
@@ -34,31 +37,14 @@
 	    color: $color-main;
 	}
 
-	.site-logo:before{
-	    content: '';
-	    position: absolute;
-	    width: 189px;
-	    height: 50px;
-	    top: -20px;
-	    left: 0px;
-	    background: rgba(255, 255, 255, 0.3);
-	    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.3)));
-	    background: linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
-	    -webkit-transform: rotate(5deg);
-	    transform: rotate(8deg);
-	    border-bottom-left-radius: 200px 20px;
-	    border-bottom-right-radius: 200px 10px;
-	    border-top-right-radius: 5px 100px;
-	}
-
-
 	.logo-sticky {
 	    margin: 0 10px 0 0;
 	    background-color: #b54425;
 	    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
 	    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
-	    padding: 20px 30px 15px 30px;
+	    padding: 5px 30px 15px 30px;
 	    max-width: none !important;
+	    height: 50px;
 	}
 	
 }
@@ -73,6 +59,10 @@
 /* for the left-float logo, transparent hover nav element effect */
 .site-header.light:not(.transparent) .tb-primary-menu > li > .menu-btn {
   color: #3a3b3a;
+}
+.site-header.transparent .header-nav .tb-primary-menu>li>.menu-btn:hover,
+.btn-navbar:hover  {
+	border-bottom-width: 0px;
 }
 .site-header.transparent .header-nav {
   background-color: rgba(0, 0, 0, 0);
@@ -96,7 +86,7 @@
 .header-content .site-logo img {
 	height: 90px;
 }
-.header-content .site-logo.logo-trans {
+.site-header.standard .logo-trans {
 	/*left: 50px;
     background: $color-white;
     position: relative;
@@ -104,8 +94,8 @@
     display: none;
 }
 .header-content .site-logo.logo-standard.show {
-	background-color: $color-main;
-	transition: all 1s ease-out;
+	//background-color: $color-main;
+	//transition: all 1s ease-out;
 }
 .home-hero-float-img {
 	position: absolute;
