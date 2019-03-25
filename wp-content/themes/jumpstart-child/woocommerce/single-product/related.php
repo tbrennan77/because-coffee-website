@@ -32,8 +32,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="col-sm-4 text-center coffee_attribute">
 				<img src="<?php the_field('flavor_notes_image'); ?>" alt="" />
 				<h3>Flavor Notes</h3>
-				<h2><?php the_field('tasting_summary'); ?></h2>
-				<p><?php the_field('flavor_notes'); ?></p>
+				<h2><?php the_field('flavor_notes'); ?></h2>
+				<p><?php //the_field('flavor_notes'); ?></p>
 			</div>
 			<?php endif; ?>
 			<?php if( get_field('tasting_summary_image') ): ?>
@@ -48,7 +48,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php if( get_field('kick_it_up_image') ): ?>
 			<div class="col-sm-4 text-center coffee_attribute">
 				<img src="<?php the_field('kick_it_up_image'); ?>" alt="" />
-				<h3>Kick It Up a Notch With</h3>
+				<h3>Take it to the next level with</h3>
 				<h2><?php the_field('kick_it_up_with'); ?></h2>
 				<p><a href="<?php the_field('kick_it_up_link'); ?>">Learn how</a></p>
 			</div>
@@ -56,7 +56,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 	</div>
 </section>
-
+<?php if( get_field('show_these_fields') ): ?>
 <section class="coffee_nerd_attributes nerd_stuff row-full">
 	<div class="container-fluid">
 		<div class="row">
@@ -95,13 +95,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 	</div>
 </section>
-
+<?php endif; ?>
 <?php
 if ( $related_products ) : ?>
 
 	<section class="related products">
 
-		<h2 class="related_coffees"><?php esc_html_e( 'More good coffee', 'woocommerce' ); ?></h2>
+		<h2 class="related_coffees"><?php esc_html_e( 'More good stuff', 'woocommerce' ); ?></h2>
 
 		<?php woocommerce_product_loop_start(); ?>
 

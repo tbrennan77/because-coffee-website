@@ -52,6 +52,27 @@
 }
 
 // Gravity Forms
+#gform_submit_button_4,
+#gform_submit_button_5,
+#gform_submit_button_6,
+#gform_submit_button_7 {
+    font-family: $font-stack;
+    border-radius: 3px;
+    padding: 8px 20px;
+    text-transform: capitalize;
+    color: white !important;
+    font-size: 1em;
+    letter-spacing: -.01em;
+    font-weight: 700;
+    text-transform: none;
+    background-color: $color-accent;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+
+    @media (max-width: 992px) {
+        max-width: none;
+        width: 100%;
+    }
+}
 .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
     border-width: 0px;
     border-bottom: 3px solid $color-accent;
@@ -59,4 +80,22 @@
     font-size: 2em;
     padding: 5px 10px;
 }
-
+.gform_wrapper .birthday {
+    width: 100%;
+}
+.gform_wrapper textarea {
+    border: 3px solid $color-accent;
+    min-height: 60px;
+    font-size: 2em;
+    padding: 5px 10px;
+    font-size: 2em;
+}
+.tb-gforms-compat .gform_wrapper .gfield_checkbox li label, .tb-gforms-compat .gform_wrapper .gfield_radio li label {
+    color: $color-main;
+}
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input, 
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox], 
+.gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
+    margin-top: 0px !important;
+    margin-right: 5px;  
+}

@@ -15,8 +15,8 @@
 	max-width: none;
 }
 .header-nav .tb-primary-menu > li > .menu-btn {
-    font-size: 17px;
-    line-height: 1.3333;
+    font-size: 18px;
+    line-height: 45px;
     text-transform: capitalize;
     letter-spacing: -.02em;
     font-weight: 900;
@@ -74,6 +74,7 @@
 .site-header.standard {
   -webkit-box-shadow: $box-shadow-none;
   box-shadow: $box-shadow-none;
+  border-bottom: 1px solid #ccc;
 }
 .header-content .site-logo {
   margin: 0 10px 0 0;
@@ -84,7 +85,7 @@
   max-width: none !important;
 }
 .header-content .site-logo img {
-	height: 90px;
+	height: 75px;
 }
 .site-header.standard .logo-trans {
 	/*left: 50px;
@@ -155,6 +156,6 @@
 		font-size: 140px;
 	    line-height: 120px;
 	    //max-width: 640px;
-	    margin-bottom: 48px;	
+	    //margin-bottom: 48px;	
 	}
 }

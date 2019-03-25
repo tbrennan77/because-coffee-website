@@ -15,22 +15,22 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-
+$switch = 1;
 ?>
-<ul class="wcsatt-options <?php echo esc_attr( $classes ); ?>">
+<div class="wcsatt-options-wrapper " <?php echo count( $options ) === 1 ? 'style="display:none;"' : '' ?>>
 	<div class="switch-field">
 	<?php
-	$switch = 1;
+	
+
 	foreach ( $options as $option ) {
-		?>
-			<input type="radio" name="cart[<?php echo $cart_item_key; ?>][convert_to_sub]" value="<?php echo esc_attr( $option[ 'value' ] ); ?>" <?php checked( $option[ 'selected' ], true, true ); ?> />
-			<label for="switch_product_<?php echo absint( $switch ); ?>">
+			?><input type="radio" name="cart[<?php echo $cart_item_key; ?>][convert_to_sub]" id="switch_product_<?php echo $cart_item_key.$switch; ?>" value="<?php echo esc_attr( $option[ 'value' ] ); ?>" <?php checked( $option[ 'selected' ], true, true ); ?> />
+			<label for="switch_product_<?php echo $cart_item_key.$switch; ?>">
 					<?php echo $option[ 'description' ]; ?>
 			</label>
-			
-		<?php
-		$switch++;
-	}
+			<?php
+			$switch++;
+		}
+
 	?>
 	</div>
-</ul>
+</div>

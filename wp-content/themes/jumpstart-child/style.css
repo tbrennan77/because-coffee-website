@@ -124,6 +124,7 @@ h5 {
 p,
 .tb-jumbotron p,
 .jumbotron p,
+.tb-content-block,
 li {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 1em;
@@ -134,6 +135,29 @@ li {
 
 .tb-jumbotron p {
   font-size: 1.5em;
+}
+
+a:not([href*='because.coffee']):not([href*='localhost']):not([href*='staging.because.coffee']):not([href^='#']):not([href^='/']):not(.gform_anchor):not([name^=map]):not(.fa-lg):not(.wpgmza_gd):after {
+  font-family: 'FontAwesome';
+  content: " \f08e";
+  color: #ccc;
+  font-size: .5em;
+  position: relative;
+  top: 1px;
+}
+
+.site-main p a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
+  border-bottom: 2px solid #b45526;
+  -webkit-box-shadow: inset 0 -2px 0 #b45526;
+  box-shadow: inset 0 -2px 0 #b45526;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
 }
 
 a:not(.site-header):not(.menu-btn):hover {
@@ -172,11 +196,11 @@ a:not(.btn, .menu-btn):visited {
 }
 
 a:not(.btn):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):hover {
-  color: #434345;
-  background: #dcddde;
-  border-bottom: 0px solid #dcddde;
-  -webkit-box-shadow: inset 0 -4px 0 #dcddde;
-  box-shadow: inset 0 -4px 0 #dcddde;
+  color: white;
+  background: #b45526;
+  border-bottom: 0px solid #b45526;
+  -webkit-box-shadow: inset 0 -4px 0 #b45526;
+  box-shadow: inset 0 -4px 0 #b45526;
 }
 
 .row-full {
@@ -225,8 +249,8 @@ a:not(.btn):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):hover {
 }
 
 .header-nav .tb-primary-menu > li > .menu-btn {
-  font-size: 17px;
-  line-height: 1.3333;
+  font-size: 18px;
+  line-height: 45px;
   text-transform: capitalize;
   letter-spacing: -.02em;
   font-weight: 900;
@@ -288,6 +312,7 @@ a:not(.btn):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):hover {
 .site-header.standard {
   -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0), 0 0px 0px rgba(0, 0, 0, 0);
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0), 0 0px 0px rgba(0, 0, 0, 0);
+  border-bottom: 1px solid #ccc;
 }
 
 .header-content .site-logo {
@@ -297,7 +322,7 @@ a:not(.btn):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):hover {
 }
 
 .header-content .site-logo img {
-  height: 90px;
+  height: 75px;
 }
 
 .site-header.standard .logo-trans {
@@ -565,12 +590,54 @@ a:not(.btn):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):hover {
   background-color: white;
 }
 
+#gform_submit_button_4,
+#gform_submit_button_5,
+#gform_submit_button_6,
+#gform_submit_button_7 {
+  font-family: "Open Sans", Arial, sans-serif;
+  border-radius: 3px;
+  padding: 8px 20px;
+  text-transform: capitalize;
+  color: white !important;
+  font-size: 1em;
+  letter-spacing: -.01em;
+  font-weight: 700;
+  text-transform: none;
+  background-color: #b45526;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+}
+
 .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
   border-width: 0px;
   border-bottom: 3px solid #b45526;
   min-height: 60px;
   font-size: 2em;
   padding: 5px 10px;
+}
+
+.gform_wrapper .birthday {
+  width: 100%;
+}
+
+.gform_wrapper textarea {
+  border: 3px solid #b45526;
+  min-height: 60px;
+  font-size: 2em;
+  padding: 5px 10px;
+  font-size: 2em;
+}
+
+.tb-gforms-compat .gform_wrapper .gfield_checkbox li label,
+.tb-gforms-compat .gform_wrapper .gfield_radio li label {
+  color: #434345;
+}
+
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input,
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox],
+.gform_wrapper.gf_browser_chrome .gfield_radio li input[type=radio] {
+  margin-top: 0px !important;
+  margin-right: 5px;
 }
 
 .home-subscribe-section .featured-image img {
@@ -807,6 +874,21 @@ a:not(.btn):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):hover {
   font-weight: lighter;
   text-shadow: 0 0px 0px rgba(0, 0, 0, 0), 0 0px 0px rgba(0, 0, 0, 0);
   letter-spacing: -.02em;
+}
+
+.whoami.subtitle {
+  color: #b45526;
+}
+
+.hashtag {
+  border-bottom: 0px solid #b45526;
+  color: #434345;
+}
+
+.hashtag:before {
+  content: "\f292";
+  font-family: "FontAwesome";
+  color: #dcddde;
 }
 
 .tb-product .product-thumb {
@@ -1089,7 +1171,7 @@ h2.woocommerce-loop-product__title,
 .coffee_attributes .container .col-sm-4 {
   width: calc(33% - 8px);
   border-radius: 5px;
-  padding: 36px;
+  padding: 32px;
   margin-bottom: 10px;
   background-color: transparent;
 }
@@ -1114,7 +1196,7 @@ h2.woocommerce-loop-product__title,
   font-weight: bold;
   font-family: "Roboto Slab", serif;
   color: #b45526;
-  font-size: 24px;
+  font-size: 23px;
   margin-top: 0px;
   line-height: 1;
 }
@@ -1122,7 +1204,7 @@ h2.woocommerce-loop-product__title,
 .coffee_attributes .container .col-sm-4 p {
   font-size: 14px;
   font-family: "Open Sans", Arial, sans-serif;
-  height: 24px;
+  height: 40px;
 }
 
 .coffee_attribute {
@@ -1348,15 +1430,6 @@ h2.woocommerce-loop-product__title,
 .woocommerce .select2-container .select2-selection--single,
 .woocommerce .select2-container--default .select2-selection--single .select2-selection__arrow {
   height: 50px;
-}
-
-.tb-woo-ordering {
-  display: none;
-  float: right;
-}
-
-.tb-woo-ordering .view {
-  display: none;
 }
 
 .cart_item .product-remove .remove {
@@ -1702,11 +1775,63 @@ body .gform_wrapper ul li.gfield {
   margin-top: 100px !important;
 }
 
-.hero h4 {
+.hero h4,
+.contact h3 {
   color: #434345;
   font-size: 32px;
   font-weight: bold;
   text-shadow: 0 0px 0px rgba(0, 0, 0, 0), 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+.about-top h2 {
+  text-transform: none;
+  text-shadow: 0 0px 0px rgba(0, 0, 0, 0), 0 0px 0px rgba(0, 0, 0, 0);
+  margin-bottom: 30px;
+}
+
+.about-top p {
+  font-size: 2.5rem;
+  font-weight: normal;
+  letter-spacing: -.02em;
+  line-height: 1.5;
+}
+
+.contact-form-area {
+  background-color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.blurred span {
+  -webkit-filter: blur(6px);
+  filter: blur(6px);
+  /* As pointed out by Alexander Erlandsson (@alexerlandsson), for situations that require better cross-browser support, the blur effect is easily reproduced with transpartent text + text-shadow
+  color: transparent;
+  text-shadow: 0 0 12px rgba(0,0,0,0.8); */
+}
+
+.invisible-ink span {
+  background: white;
+  color: white;
+  /* Vincent Charpentier (@VincentCharpentier) also pointed out a simple rule for true invisibility
+  color: rgba(0,0,0,0);*/
+}
+
+.redacted span {
+  position: relative;
+  white-space: pre;
+}
+
+.redacted span:after {
+  background: black;
+  border-radius: 0.1em;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+  content: " ";
+  width: 100%;
+  height: 1.2em;
+  left: 0;
+  position: absolute;
+  -webkit-transform: skewY(-5deg) rotate(5deg);
+  transform: skewY(-5deg) rotate(5deg);
 }
 
 @media (min-width: 767px) {
@@ -1719,7 +1844,6 @@ body .gform_wrapper ul li.gfield {
   .tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
     font-size: 140px;
     line-height: 120px;
-    margin-bottom: 48px;
   }
 }
 
@@ -1759,6 +1883,14 @@ body .gform_wrapper ul li.gfield {
   }
 
   .btn {
+    max-width: none;
+    width: 100%;
+  }
+
+  #gform_submit_button_4,
+  #gform_submit_button_5,
+  #gform_submit_button_6,
+  #gform_submit_button_7 {
     max-width: none;
     width: 100%;
   }
@@ -1804,6 +1936,7 @@ body .gform_wrapper ul li.gfield {
   p,
   .tb-jumbotron p,
   .jumbotron p,
+  .tb-content-block,
   li {
     font-size: 1.5rem;
   }
@@ -1919,6 +2052,11 @@ body .gform_wrapper ul li.gfield {
     text-align: left;
     display: block;
     width: 100%;
+  }
+
+  .about-top p {
+    font-size: 1.7rem;
+    line-height: 1.3;
   }
 }
 

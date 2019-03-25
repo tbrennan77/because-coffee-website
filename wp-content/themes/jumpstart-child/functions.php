@@ -88,3 +88,23 @@ function register_foundation_style() {
   }
 }
 add_action( 'wp_enqueue_scripts', 'register_foundation_style' );
+
+
+add_filter( 'woocommerce_output_related_products_args', 'change_number_related_products', 9999 );
+
+function change_number_related_products( $args ) {
+ $args['posts_per_page'] = 3; // # of related products
+ $args['columns'] = 3; // # of columns per row
+ return $args;
+}
+
+function prefix_add_my_widget() {
+ echo '<div id="my-sidebar" class="sidebar">';
+ echo "XXX";
+ //dynamic_sidebar( 'my-sidebar' );
+ echo '</div>';
+}
+add_action( 'woocommerce_before_shop_loop', 'prefix_add_my_widget'  );
+
+
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );

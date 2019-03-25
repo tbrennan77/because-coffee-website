@@ -233,3 +233,15 @@
 	text-shadow: $text-shadow-none;
 	letter-spacing: -.02em;
 }
+.whoami.subtitle {
+	color: $color-accent;
+}
+.hashtag {
+	border-bottom: 0px solid $color-accent;
+	color: $color-main;
+}
+.hashtag:before {
+	content: "\f292";
+	font-family: "FontAwesome";
+	color: $color-light;
+}
