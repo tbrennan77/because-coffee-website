@@ -605,16 +605,24 @@ h2.woocommerce-loop-product__title,
 */
 .switch-field {
 	overflow: hidden;
-	max-width: 300px;
 	background-color: #e4e4e4;
-	margin-bottom: 5px;
-	border-radius: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    margin-right: 0;
+    padding-right: 0;
+    width: calc(100% - 60px);
 
 	@media (max-width: 767px) {
 	    max-width: 100%;
 	}
 }
-
+.single-product {
+	.switch-field {
+		max-width: 300px;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+}
 .switch-title {
   margin-bottom: 8px;
   font-weight: normal;
@@ -708,20 +716,22 @@ table.cart td.product-quantity .qty {
 	}
 	.switch-field {
 		overflow: hidden;
-		max-width: 200px;
+		min-width: 160px;
 		background-color: #e4e4e4;
 		margin-bottom: 5px;
 		border-radius: 5px;
+
+		label {
+			font-size: 10px;
+			padding: 10px 5px;
+			height: 40px;
+		}
 
 		@media (max-width: 767px) {
 		    max-width: 100%;
 		}
 	}
-	.switch-field label {
-		font-size: 12px;
-		padding: 10px 5px;
-		height: 40px;
-	}
+
 	ul.wcsatt-options {
 	    margin: auto 0;
 	    padding: 5px 0 0 0;
@@ -742,6 +752,15 @@ table.cart td.product-quantity .qty {
 	.shop_table.cart .product-subtotal {
 		text-align: left;
 	}
+}
+.woocommerce-message {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#26b59d+0,ffffff+80&0.5+0,0+81 */
+	background: -moz-linear-gradient(-45deg, rgba(38,181,157,0.4) 0%, rgba(235,248,246,0) 77%, rgba(255,255,255,0) 85%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(38,181,157,0.4) 0%,rgba(235,248,246,0) 77%,rgba(255,255,255,0) 85%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(38,181,157,0.4) 0%,rgba(235,248,246,0) 77%,rgba(255,255,255,0) 85%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6626b59d', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	border-color: rgba(38, 181, 157, 1);
+    color: rgba(38, 181, 157, 1);
 }
 @media screen and (min-width: 768px) {
 	.tb-product-loop-wrap.grid-view.shop-columns-4 ul.products li.product {

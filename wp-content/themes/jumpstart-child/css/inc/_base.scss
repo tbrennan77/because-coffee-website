@@ -51,8 +51,9 @@ h2,
 	*/
 	font-size: 6rem;
     line-height: 6.25rem;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     margin-bottom: 2rem;
+    text-shadow: $text-shadow-none
 }
 h3 {
 	color: rgba(58, 59, 58, 1);
