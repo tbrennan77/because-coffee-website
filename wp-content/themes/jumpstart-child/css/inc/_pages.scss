@@ -1,7 +1,7 @@
 .hero h1 {
 	color: $color-main;
     font-size: 64px;
-	margin-top: 100px !important;
+	margin-top: 100px;
 }
 .hero h4,
 .contact h3 {
@@ -9,6 +9,11 @@
 	font-size: 32px;
 	font-weight: bold;
 	text-shadow: $text-shadow-none;
+}
+#home-section-1 .tb-bg-video {
+	@media (max-width: 767px) {
+		display: none;
+	}
 }
 .about-top {
 	h2 {

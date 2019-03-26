@@ -75,6 +75,10 @@
     	line-height: 1;
     	margin-bottom: 20px;
     	font-family: $font-roboto;
+
+    	@media (max-width: 767px) {
+			font-size: 3em;
+		}
 	}
 }
 .doug-pouring img {
@@ -239,9 +243,10 @@
 .hashtag {
 	border-bottom: 0px solid $color-accent;
 	color: $color-main;
+	margin-right: 5px;
 }
 .hashtag:before {
 	content: "\f292";
 	font-family: "FontAwesome";
-	color: $color-light;
+	color: $color-main;
 }

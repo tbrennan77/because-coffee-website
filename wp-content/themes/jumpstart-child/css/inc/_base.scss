@@ -42,6 +42,12 @@ h1 {
 	font-weight: 900;
 	text-shadow: none;
 }
+.tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
+	@media (max-width: 767px) {
+		font-size: 40px;
+    	line-height: 1;
+	}
+}
 h2,
 .tb-headline h2 {
 	/*
@@ -98,7 +104,7 @@ a:not([href*='because.coffee']):not([href*='localhost']):not([href*='staging.bec
     position: relative;
     top: 1px;
 }
-.site-main p a {
+.site-main p a:not(.wpgmza_gd) {
 	background-color: transparent;
     color: inherit;
     text-decoration: none;

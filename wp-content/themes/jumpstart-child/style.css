@@ -146,7 +146,7 @@ a:not([href*='because.coffee']):not([href*='localhost']):not([href*='staging.bec
   top: 1px;
 }
 
-.site-main p a {
+.site-main p a:not(.wpgmza_gd) {
   background-color: transparent;
   color: inherit;
   text-decoration: none;
@@ -883,12 +883,13 @@ a:not(.btn):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):hover {
 .hashtag {
   border-bottom: 0px solid #b45526;
   color: #434345;
+  margin-right: 5px;
 }
 
 .hashtag:before {
   content: "\f292";
   font-family: "FontAwesome";
-  color: #dcddde;
+  color: #434345;
 }
 
 .tb-product .product-thumb {
@@ -1792,7 +1793,7 @@ body .gform_wrapper ul li.gfield {
 .hero h1 {
   color: #434345;
   font-size: 64px;
-  margin-top: 100px !important;
+  margin-top: 100px;
 }
 
 .hero h4,
@@ -1953,6 +1954,11 @@ body .gform_wrapper ul li.gfield {
     line-height: 1;
   }
 
+  .tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
+    font-size: 40px;
+    line-height: 1;
+  }
+
   p,
   .tb-jumbotron p,
   .jumbotron p,
@@ -1983,6 +1989,10 @@ body .gform_wrapper ul li.gfield {
   .home-subscribe-section h4 {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .local-coffee h1 {
+    font-size: 3em;
   }
 
   .doug-pouring img {
@@ -2072,6 +2082,10 @@ body .gform_wrapper ul li.gfield {
     text-align: left;
     display: block;
     width: 100%;
+  }
+
+  #home-section-1 .tb-bg-video {
+    display: none;
   }
 
   .about-top p {
