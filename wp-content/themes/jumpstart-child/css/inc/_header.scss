@@ -150,8 +150,9 @@
     @media (min-width: 992px) {
 		font-size: 100px;
     	line-height: 1;
-    	//max-width: 908px;
+    	margin-top: 0px !important;
 	}
+
 	@media (min-width: 768px) {
 		font-size: 140px;
 	    line-height: 120px;

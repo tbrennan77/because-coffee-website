@@ -6,12 +6,16 @@
 .hero h4,
 .contact h3 {
 	color: $color-main;
-	font-size: 32px;
+	font-size: 3em;
 	font-weight: bold;
 	text-shadow: $text-shadow-none;
+	
+	@media (max-width: 768px) {
+		font-size: 2em;
+	}
 }
 #home-section-1 .tb-bg-video {
-	@media (max-width: 767px) {
+	@media (max-width: 768px) {
 		display: none;
 	}
 }
