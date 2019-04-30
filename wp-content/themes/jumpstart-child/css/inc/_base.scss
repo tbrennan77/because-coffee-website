@@ -85,7 +85,7 @@ p,
 li {
 	font-family: $font-stack;
 	font-size: 1em;
-    line-height: 1.4;
+    line-height: 1.6;
 	font-weight: 500;
 	letter-spacing: -.02em;
 
@@ -96,7 +96,7 @@ li {
 .tb-jumbotron p {
 	font-size: 1.5em;
 }
-a:not([href*='because.coffee']):not([href*='localhost']):not([href*='staging.because.coffee']):not([href^='#']):not([href^='/']):not(.gform_anchor):not([name^=map]):not(.fa-lg):not(.wpgmza_gd):after  {
+a:not([href*='because.coffee']):not([href*='localhost']):not([href*='staging.because.coffee']):not([href^='#']):not([href^='/']):not(.gform_anchor):not([name^=map]):not(.fa-lg):not(.btn):after  {
     font-family: 'FontAwesome';
     content: " \f08e";
     color: #ccc;
@@ -104,21 +104,20 @@ a:not([href*='because.coffee']):not([href*='localhost']):not([href*='staging.bec
     position: relative;
     top: 1px;
 }
-.site-main p a:not(.wpgmza_gd) {
+.site-main p a:not(.btn) {
 	background-color: transparent;
     color: inherit;
     text-decoration: none;
     -webkit-transition: background .15s cubic-bezier(0.33, 0.66, 0.66, 1);
     -o-transition: background .15s cubic-bezier(0.33, 0.66, 0.66, 1);
     transition: background .15s cubic-bezier(0.33, 0.66, 0.66, 1);
-    border-bottom: 2px solid $color-accent;
     -webkit-box-shadow: inset 0 -2px 0 $color-accent;
     box-shadow: inset 0 -2px 0 $color-accent;
     overflow-wrap: break-word;
     word-break: break-word;
     word-wrap: break-word;
 }
-a:not(.site-header):not(.menu-btn):hover {
+a.site-main:hover {
 	color: $color-main;
 	border-bottom: 2px solid $color-accent;
 }
@@ -128,15 +127,14 @@ a:not(.site-header):not(.menu-btn):hover {
 .header-nav .tb-primary-menu > li > .wpmenucart-contents:hover {
 	color: $color-accent;
 }
-a:not(.site-footer):not(.menu-btn):not(.tb-image-logo):hover, 
-a:not(.site-footer):not(.menu-btn):not(.tb-image-logo):visited, 
-a:not(.site-footer):not(.menu-btn):not(.tb-image-logo):active,
-a:not(.alt) {
+a.site-main:hover, 
+a.site-main:visited, 
+a.site-main {
 	color: $color-accent;
 }
 
-a:not(.btn, .menu-btn),
-a:not(.btn, .menu-btn):visited {
+a.site-main,
+a.site-main:visited {
 	background-color: transparent;
     color: $color-accent;
     text-decoration: none;
@@ -154,8 +152,8 @@ a:not(.btn):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):hover {
 	color: $color-white;
 	background: $color-accent;
 	border-bottom: 0px solid $color-accent;
-    -webkit-box-shadow: inset 0 -4px 0 $color-accent;
-    box-shadow: inset 0 -4px 0 $color-accent;
+    -webkit-box-shadow: inset 0 -2px 0 $color-accent;
+    box-shadow: inset 0 -2px 0 $color-accent;
 }
 
 .hero {
