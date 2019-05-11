@@ -1,0 +1,272 @@
+.home-subscribe-section {
+	.featured-image img {
+		position: absolute;
+	    top: -100px;
+	    z-index: 999;
+	    left: 80px;
+	}
+	h2 {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-family: $font-roboto;
+		margin-top: 0px;
+	    font-size: 4em;
+	    text-shadow: none;
+		letter-spacing: -.02em;
+		color: $color-accent;
+		line-height: .9;
+		margin-top: 20px;
+
+		@media (max-width: 767px) {
+			font-size: 2.5rem;
+	    	line-height: 3rem;
+		}
+	}
+	h3 {
+		font-family: $font-stack;
+		color: $color-main;
+	    margin-bottom: 5px;
+	    text-transform: uppercase;
+	    font-weight: 100;
+	    text-shadow: none;
+	}
+	h4 {
+		text-transform: capitalize;
+		font-weight: 500;
+		font-family: $font-stack;
+		color: $color-main;
+		font-size: 1.15rem;
+    	text-shadow: none;
+    	letter-spacing: -.02em;
+    	margin-bottom: 0px;
+
+    	@media (max-width: 767px) {
+			font-size: 1.5rem;
+		    line-height: 2rem;
+		}
+	}
+	.btn {
+		font-size: 16px;
+	}
+	.element-divider .tb-divider {
+		margin-bottom: 0px;
+	}
+}
+
+.why-because {
+	h2 {
+		font-family: $font-header;
+		color: $color-white;
+		text-transform: uppercase;
+		text-shadow: none;
+		font-size: 3em;
+		font-weight: bold;
+	}
+	p {
+		font-family: $font-stack;
+		color: $color-white;
+	}
+}
+
+.local-coffee {
+	h1 {
+		font-size: 4em;
+    	letter-spacing: -.06em;
+    	line-height: 1;
+    	margin-bottom: 20px;
+    	font-family: $font-roboto;
+
+    	@media (max-width: 992px) {
+		    font-size: 2em;
+		  }
+	}
+}
+.doug-pouring img {
+	max-width: 100%;
+    position: absolute;
+    left: 2px;
+    top: -22px;
+
+    @media (max-width: 767px) {
+		display: none;
+	}
+}
+.shop-or-subscribe {
+	h2 {
+		font-size: 4em;
+    	font-family: $font-roboto;
+    	color: $color-main;
+    	margin-bottom: 3px;
+    	text-transform: none;
+
+	      @media (max-width: 992px) {
+		    font-size: 2em;
+		  }
+	}
+	h3 {
+		font-size: 2em;
+    	line-height: 1;
+    	font-family: $font-roboto;
+    	color: $color-accent;
+
+    	@media (max-width: 992px) {
+		   font-size: 2em;
+		}
+	}
+	.tb-headline p {
+		max-width: 500px;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 16px;
+	}
+}
+.how-it-works {
+	.col-md-6 {
+		@media (min-width: 992px) {
+			width: 46%;
+	    	margin: 0 2%;
+		}
+	}
+}
+.cta-tile-wrapper {
+	border-radius: 4px;
+	box-shadow: $box-shadow;
+	margin-top: 20px;
+	transition: all .2s ease-in-out; 
+}
+.cta-tile-wrapper:hover { 
+	transform: scale(1.02); 
+}
+.testimonial_rotator.format-rotator .slide {
+	background: rgba(255,255,255,.95);
+
+	.testimonial_rotator_description {
+		padding-top: 40px;
+
+		  @media (max-width: 992px) {
+		    padding-top: 20px;
+		  }
+	}
+}
+.testimonial_rotator.template-longform hr.longform_hr {
+	color: #ccc;
+}
+.testimonial_rotator_wrap {
+	max-width: 700px;
+	margin: 0 auto;
+}
+.testimonial_rotator_quote {
+	font-size: 1.8em;
+    line-height: 1.125;
+    font-family: $font-roboto;
+    color: $color-accent;
+    letter-spacing: -.02em;
+
+    @media (max-width: 992px) {
+    	font-size: 1em;
+  	}
+}
+.testimonial_rotator.template-longform .testimonial_rotator_author_info p {
+	color: $color-main;
+	font-weight: 900;
+	font-family: $font-stack;
+	font-size: 2em;
+    line-height: 1.3333;
+    letter-spacing: -.02em;
+
+    @media (max-width: 992px) {
+	    font-size: 1em;
+	  }
+}
+.margin-bottom-20 {
+	margin-bottom: 20px !important;
+}
+.margin-bottom-16 {
+	margin-bottom: 16px !important;
+}
+.margin-bottom-0 {
+	margin-bottom: 0px !important;
+}
+.hr-theme-slash-2 {
+  display: flex;
+  
+  .hr-line {
+    width: 100%;
+    position: relative;
+    margin: 15px;
+    border-bottom: 1px solid #dcddde;
+  }
+  .hr-icon {
+    position: relative;
+    top: 3px;
+    color: #ff0000;
+
+    img {
+    	width: 32px;
+    	height: 32px;
+    	max-width: 32px; //override the default img max-width property
+    }
+  }
+}
+.firstcharacter {
+  color: $color-accent;
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+.imp-tooltip {
+	p { 
+		color: $color-main;
+	}
+	h2 {
+		font-family: $font-roboto;
+		color: $color-main;
+		font-size: 4rem;
+    	line-height: 4.25rem;
+    	margin-bottom: 20px;
+	}
+	h3 {
+		font-family: $font-roboto;
+		color: $color-accent;
+	}
+
+}
+.whatsmyname {
+	color: $color-accent;
+	font-family: $font-roboto;
+	text-shadow: $text-shadow-none;
+	font-size: 4rem;
+	line-height: 3.2rem;
+	display: block;
+	margin-bottom: 05px;
+	text-shadow: $text-shadow-none;
+	letter-spacing: -.02em;
+}
+.whoami {
+	color: $color-main;
+	font-family: $font-roboto;
+	font-size: 3rem;
+	line-height: 3.2rem;
+	display: block;
+	margin-bottom: 5px;
+	font-weight: lighter;
+	text-shadow: $text-shadow-none;
+	letter-spacing: -.02em;
+}
+.whoami.subtitle {
+	color: $color-accent;
+}
+.hashtag {
+	border-bottom: 0px solid $color-accent;
+	color: $color-main;
+	margin-right: 5px;
+}
+.hashtag:before {
+	content: "\f292";
+	font-family: "FontAwesome";
+	color: $color-main;
+}
