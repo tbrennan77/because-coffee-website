@@ -9,7 +9,7 @@ const bs = require('browser-sync');
 const sassLint = require('gulp-sass-lint');
 
 const SASS_SOURCES = [
-  './wp-content/themes/jumpstart-child/*.scss', // This picks up our style.scss file at the root of the theme
+  './wp-content/themes/because-coffee/*.scss', // This picks up our style.scss file at the root of the theme
   'css/**/*.scss',                           // All other Sass files in the /css directory
 ];
 
