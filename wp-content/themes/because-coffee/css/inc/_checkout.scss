@@ -24,15 +24,38 @@
     float: left;
     width: 100%;
 }
-.custom-checkout h3 {
-    background-color: #165f1c;  /****CHANGE TO COLOR YOU WANT TO USE FOR TITLE BACKGROUND ****/
+.woocommerce-checkout h3 {
+    background-color: $color-main;  /****CHANGE TO COLOR YOU WANT TO USE FOR TITLE BACKGROUND ****/
     width: 45%;
     text-align: center;
     padding: 10px;
-    border-radius: 5px;
-    margin-top: 50px;
+    border-radius: 0px;
+    margin-top: 0px;
     color: #FFF;
     float: right;
+}
+.mailchimp-newsletter, 
+.create-account {
+	width: 100%;
+	background-color: $color-main;
+    text-align: center;
+    padding: 8px;
+    border-radius: 0px;
+    margin-top: 0px;
+    color: #FFF;
+    float: right;
+    font-size: 2rem;
+    margin-bottom: 10px !important;
+
+    label {
+    	display: inline;
+    }
+    input {
+    	display: inline;
+	    position: absolute;
+	    margin-left: -20px;
+	    margin-top: 9px;
+    }
 }
 .woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
     padding: .6180469716em;
@@ -46,13 +69,26 @@
     font-weight: 400;
    border:solid 2px #e4e4e4;
 }
-
+.shipping_method {
+	margin-bottom: 0px;
+}
 #wc_checkout_add_ons {
     width: 45%;
     float: right;
     text-align: center;
 }
-
+.shop_table th {
+	background-color: #fff;
+}
+.shop_table thead th {
+	background-color: $color-lighter;
+}
+.shop_table .woocommerce-Price-amount {
+	font-weight: bold;
+}
+.woocommerce #order_review tr>td.product-name {
+	border-right-width: 0px;
+}
 @media screen and (min-width: 980px) {
 .woocommerce-shipping-fields h3, .woocommerce-billing-fields h3 {width:100%;}
 .woocommerce .col2-set, .woocommerce-page .col2-set {
