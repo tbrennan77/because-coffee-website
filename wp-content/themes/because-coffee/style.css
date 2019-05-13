@@ -1756,6 +1756,57 @@ table.cart td.product-quantity .qty {
   color: #fff;
 }
 
+.woocommerce-MyAccount-navigation {
+  margin-bottom: 30px;
+}
+
+.woocommerce-MyAccount-navigation ul {
+  margin-left: 0;
+  padding-left: 0;
+  display: inline;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.woocommerce-MyAccount-navigation ul li {
+  display: inline-block;
+}
+
+.woocommerce-MyAccount-navigation ul li a {
+  border: 2px solid #b54226;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.woocommerce-MyAccount-content .woocommerce-orders-table__cell .woocommerce-button {
+  width: auto !important;
+  padding: 5px 10px !important;
+  margin-right: 10px;
+}
+
+.woocommerce-account .woocommerce-order-details__title,
+.woocommerce-account .woocommerce-customer-details h2 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: #b45526;
+}
+
+.woocommerce-account h2 {
+  font-size: 3rem;
+  line-height: 3.25rem;
+  color: #b45526;
+}
+
+.woocommerce-edit-address .woocommerce-Address-title h3 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: #b45526;
+  font-family: "Roboto Slab", serif;
+}
+
 .wc_payment_method.payment_method_stripe img {
   max-width: 50px;
 }
@@ -1790,16 +1841,43 @@ table.cart td.product-quantity .qty {
   width: 100%;
 }
 
-.custom-checkout h3 {
-  background-color: #165f1c;
+.woocommerce-checkout h3 {
+  background-color: #434345;
   /****CHANGE TO COLOR YOU WANT TO USE FOR TITLE BACKGROUND ****/
   width: 45%;
   text-align: center;
   padding: 10px;
-  border-radius: 5px;
-  margin-top: 50px;
+  border-radius: 0px;
+  margin-top: 0px;
   color: #FFF;
   float: right;
+}
+
+.mailchimp-newsletter,
+.create-account {
+  width: 100%;
+  background-color: #434345;
+  text-align: center;
+  padding: 8px;
+  border-radius: 0px;
+  margin-top: 0px;
+  color: #FFF;
+  float: right;
+  font-size: 2rem;
+  margin-bottom: 10px !important;
+}
+
+.mailchimp-newsletter label,
+.create-account label {
+  display: inline;
+}
+
+.mailchimp-newsletter input,
+.create-account input {
+  display: inline;
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 9px;
 }
 
 .woocommerce form .form-row input.input-text,
@@ -1817,10 +1895,30 @@ table.cart td.product-quantity .qty {
   border: solid 2px #e4e4e4;
 }
 
+.shipping_method {
+  margin-bottom: 0px;
+}
+
 #wc_checkout_add_ons {
   width: 45%;
   float: right;
   text-align: center;
+}
+
+.shop_table th {
+  background-color: #fff;
+}
+
+.shop_table thead th {
+  background-color: #f9f9f9;
+}
+
+.shop_table .woocommerce-Price-amount {
+  font-weight: bold;
+}
+
+.woocommerce #order_review tr > td.product-name {
+  border-right-width: 0px;
 }
 
 .custom-layout-coming-soon .site-copyright,
