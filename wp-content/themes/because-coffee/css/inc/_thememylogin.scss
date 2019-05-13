@@ -1,7 +1,117 @@
 // Theme My Login related CSS
-.tml {
-
-	.tml-register {
-		
+//.tml {
+	.tml-action-login, 
+	.tml-action-lostpassword,
+	.tml-action-register, 
+	.tml-action-profile {
+		h1.entry-title {
+			font-family: $font-header;
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
+			letter-spacing: -.03em;
+			font-size: 2em;
+		}
+		header.entry-header {
+			max-width: 600px;
+    		margin: 0 auto;
+		}
+		article.page {
+			background-color: transparent;
+		}
 	}
-}
+	.tml-register, 
+	.tml-lostpassword, 
+	.tml-profile {
+		max-width: 600px;
+	    margin: 0 auto;
+	}
+	.tml-login {
+	    max-width: 600px;
+	    margin: 0 auto;
+
+	    .tml-social-providers-divider span {
+	    	color: $color-main;
+	    	font-weight: bold;
+	    	line-height: 1.8;
+	    }
+
+	    .tml-social-provider .tml-social-provider-text {
+	    	font-weight: bold;
+	    }
+
+	    .tml-social-providers a.tml-social-provider:link {
+	    	box-shadow: $box-shadow;
+	    }
+
+	}
+	.tml-profile {
+		h3 {
+			font-weight: bold;
+			font-family: $font-roboto;
+			color: $color-accent;
+			
+			.tml-name_section_header-wrap {
+				margin-top: 30px;
+			}
+		}
+	}
+	.tml-button {
+			font-family: $font-stack !important;
+		    border-radius: 3px !important;
+		    padding: 8px 20px !important;
+		    text-transform: capitalize !important;
+		    color: $color-lighter !important;
+		    font-size: 1em !important;
+		    letter-spacing: -.01em !important;
+		    font-weight: 700 !important;
+		    text-transform: none !important;
+		    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24) !important;
+		    background-color: $color-accent !important;
+
+		    @media (max-width: 992px) {
+		        max-width: none;
+		        width: 100%;
+		    }
+		}
+		.tml-button:hover {
+			background-color: $color-main;
+			color: $color-white;
+		}
+		.tml-links {
+			margin-left: 0;
+    		padding-left: 0;
+    		list-style-type: none;
+
+    		li {
+    			display: inline-block;
+    			margin-right: 20px;
+    		}
+
+    		.tml-register-link a:before {
+    			//font-family: "Font Awesome 5 Free"; 
+    			font-weight: 900; 
+    			content: "\f234";
+    			font-family: FontAwesome;
+    			margin-right: 5px;
+    		}
+    		.tml-lostpassword-link a:before {
+    			font-weight: 900; 
+    			content: "\f023";
+    			font-family: FontAwesome;
+    			margin-right: 5px;
+    		}
+    		.tml-login-link a:before {
+    			font-weight: 900; 
+    			content: "\f007";
+    			font-family: FontAwesome;
+    			margin-right: 5px;
+    		}
+	}
+
+	.tml-social-providers {
+		max-width: 600px;
+	}
+	.tml-social-providers a.tml-social-provider-google:link {
+		background-color: #DB4437;
+		color: #fff;
+	}
+//}
