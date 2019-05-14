@@ -89,6 +89,23 @@
 .woocommerce #order_review tr>td.product-name {
 	border-right-width: 0px;
 }
+.woocommerce-edit-address {
+	.woocommerce-Address-title h3 {
+		font-size: 2rem;
+    	line-height: 2.25rem;
+    	color: $color-accent;
+    	font-family: $font-roboto;
+	}
+}
+.woocommerce-order-received {
+	.woocommerce-order-details__title, 
+	.woocommerce-column__title {
+		font-size: 2rem;
+    	line-height: 2.25rem;
+    	color: $color-accent;
+    	font-family: $font-roboto;
+	}
+}
 @media screen and (min-width: 980px) {
 .woocommerce-shipping-fields h3, .woocommerce-billing-fields h3 {width:100%;}
 .woocommerce .col2-set, .woocommerce-page .col2-set {
