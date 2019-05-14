@@ -1800,13 +1800,6 @@ table.cart td.product-quantity .qty {
   color: #b45526;
 }
 
-.woocommerce-edit-address .woocommerce-Address-title h3 {
-  font-size: 2rem;
-  line-height: 2.25rem;
-  color: #b45526;
-  font-family: "Roboto Slab", serif;
-}
-
 .wc_payment_method.payment_method_stripe img {
   max-width: 50px;
 }
@@ -1919,6 +1912,21 @@ table.cart td.product-quantity .qty {
 
 .woocommerce #order_review tr > td.product-name {
   border-right-width: 0px;
+}
+
+.woocommerce-edit-address .woocommerce-Address-title h3 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: #b45526;
+  font-family: "Roboto Slab", serif;
+}
+
+.woocommerce-order-received .woocommerce-order-details__title,
+.woocommerce-order-received .woocommerce-column__title {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  color: #b45526;
+  font-family: "Roboto Slab", serif;
 }
 
 .custom-layout-coming-soon .site-copyright,
@@ -2153,6 +2161,21 @@ body .gform_wrapper ul li.gfield {
   transform: skewY(-5deg) rotate(5deg);
 }
 
+.hero-about {
+  min-height: 500px !important;
+}
+
+.hero-about .jumbotron-wrap {
+  position: relative;
+  top: 300px;
+}
+
+.hero-about .jumbotron-wrap h1 {
+  font-weight: 900;
+  font-family: "Roboto Slab", serif;
+  color: #434345 !important;
+}
+
 @media (min-width: 768px) {
   .tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
     font-size: 140px;
@@ -2280,6 +2303,14 @@ body .gform_wrapper ul li.gfield {
   .tml-button {
     max-width: none;
     width: 100%;
+  }
+
+  .hero-about {
+    min-height: 350px !important;
+  }
+
+  .hero-about .jumbotron-wrap {
+    top: 200px !important;
   }
 }
 
