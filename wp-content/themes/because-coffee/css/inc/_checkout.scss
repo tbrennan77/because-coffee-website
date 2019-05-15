@@ -106,19 +106,23 @@
     	font-family: $font-roboto;
 	}
 }
-@media screen and (min-width: 980px) {
-.woocommerce-shipping-fields h3, .woocommerce-billing-fields h3 {width:100%;}
-.woocommerce .col2-set, .woocommerce-page .col2-set {
- width: 45%;
- float: left;
+.wpmenucart-icon-shopping-cart-2 {
+	color: $color-accent;
 }
-.woocommerce-checkout-review-order{
- width: 45%;
- float: right;
+@media screen and (min-width: 992px) {
+	.woocommerce-shipping-fields h3, 
+	.woocommerce-billing-fields h3 {width:100%;}
+	.woocommerce .col2-set, .woocommerce-page .col2-set {
+		width: 45%;
+		float: left;
+	}
+	.woocommerce-checkout-review-order{
+		width: 45%;
+		float: right;
+	}
 }
-}
-@media screen and (max-width: 979px) {
-.custom-checkout h3 {
- width: 100%;
-}
+@media screen and (max-width: 992px) {
+	.custom-checkout h3 {
+		width: 100%;
+	}
 }
