@@ -137,15 +137,6 @@ li {
   font-size: 1.5em;
 }
 
-a:not([href*='because.coffee']):not([href*='localhost']):not([href*='staging.because.coffee']):not([href^='#']):not([href^='/']):not(.gform_anchor):not([name^=map]):not(.fa-lg):not(.btn):after {
-  font-family: 'FontAwesome';
-  content: " \f08e";
-  color: #ccc;
-  font-size: .5em;
-  position: relative;
-  top: 1px;
-}
-
 .site-main p a:not(.btn) {
   background-color: transparent;
   color: inherit;
@@ -193,12 +184,13 @@ a.site-main:visited {
   word-wrap: break-word;
 }
 
-a:not(.btn):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):hover {
+a:not(.btn):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):not(.woocommerce-loop-product__link):hover {
   color: white;
   background: #b45526;
   border-bottom: 0px solid #b45526;
   -webkit-box-shadow: inset 0 -2px 0 #b45526;
   box-shadow: inset 0 -2px 0 #b45526;
+  border: 0px solid #b45526;
 }
 
 .row-full {
@@ -222,6 +214,11 @@ a:not(.btn):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):hover {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .site-header.transparent {
@@ -1099,6 +1096,10 @@ h2.woocommerce-loop-product__title {
   color: rgba(26, 26, 26, 0.7);
 }
 
+.woocommerce-variation.single_variation {
+  margin-bottom: 15px;
+}
+
 .tagged_as {
   display: none;
 }
@@ -1166,6 +1167,59 @@ h2.woocommerce-loop-product__title,
 
 .woocommerce-tabs {
   display: none;
+}
+
+.wcsatt-options-product {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wcsatt-options-product li {
+  float: left;
+  margin: 0 5px 0 0;
+  position: relative;
+  width: 50%;
+  height: 80px;
+  padding: 15px;
+  padding-top: 20px;
+  margin-right: 0px;
+}
+
+.wcsatt-options-product label {
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.wcsatt-options-product label,
+.wcsatt-options-product input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.wcsatt-options-product input[type="radio"] {
+  opacity: 0.011;
+  z-index: 100;
+}
+
+.wcsatt-options-product input[type="radio"]:checked + label {
+  background: yellow;
+}
+
+.wcsatt-options-product label {
+  padding: 5px;
+  border: 1px solid #CCC;
+  cursor: pointer;
+  z-index: 90;
+}
+
+.wcsatt-options-product label:hover {
+  background: #DDD;
 }
 
 .tb-product-loop-wrap li.product {
@@ -1518,14 +1572,17 @@ h2.woocommerce-loop-product__title,
 .switch-field label {
   float: left;
   width: 50%;
-  height: 60px;
-  padding: 15px;
-  padding-top: 20px;
+  height: 80px;
+  padding: 20px 15px 15px 15px;
+  padding-top: 26px !important;
   border-radius: 0px;
   -webkit-box-shadow: none;
   box-shadow: none;
   margin-right: 0px;
   margin-bottom: 0px;
+  font-size: 1em !important;
+  font-weight: bold;
+  letter-spacing: -.02em;
 }
 
 .switch-field label {
@@ -1621,6 +1678,15 @@ table.cart td.product-quantity .qty {
   text-align: left;
 }
 
+.woocommerce-cart .shop_table.cart td.actions .coupon .input-text {
+  min-height: 45px !important;
+}
+
+.woocommerce-cart-form .switch-field label {
+  padding-top: 0px !important;
+  font-size: 13px !important;
+}
+
 .woocommerce-message {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#26b59d+0,ffffff+80&0.5+0,0+81 */
   /* FF3.6-15 */
@@ -1631,6 +1697,25 @@ table.cart td.product-quantity .qty {
   /* IE6-9 fallback on horizontal gradient */
   border-color: #26b59d;
   color: #26b59d;
+}
+
+.woof_sid_auto_shortcode.woof,
+.woof_submit_search_form_container {
+  display: none !important;
+}
+
+.chosen-search input[type="text"] {
+  min-height: 30px !important;
+}
+
+ul.chosen-results {
+  padding: 7px !important;
+}
+
+ul.chosen-results li {
+  line-height: 1.5 !important;
+  margin: 0 0 5px 0 !important;
+  padding: 5px !important;
 }
 
 .tml-action-login h1.entry-title,
@@ -1929,6 +2014,10 @@ table.cart td.product-quantity .qty {
   font-family: "Roboto Slab", serif;
 }
 
+.wpmenucart-icon-shopping-cart-2 {
+  color: #b45526;
+}
+
 .custom-layout-coming-soon .site-copyright,
 .custom-layout-coming-soon .site-header.transparent,
 .custom-layout-coming-soon .site-footer,
@@ -2176,6 +2265,17 @@ body .gform_wrapper ul li.gfield {
   color: #434345 !important;
 }
 
+.custom-layout-about .site-header.standard {
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom-width: 0px;
+}
+
+.custom-layout-about .site-header.standard .header-nav {
+  background: transparent;
+}
+
 @media (min-width: 768px) {
   .tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
     font-size: 140px;
@@ -2197,7 +2297,20 @@ body .gform_wrapper ul li.gfield {
   }
 }
 
-@media screen and (min-width: 980px) {
+@media (min-width: 992px) {
+  .tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
+    font-size: 100px;
+    line-height: 1;
+    margin-top: 0px !important;
+  }
+
+  .how-it-works .col-md-6 {
+    width: 46%;
+    margin: 0 2%;
+  }
+}
+
+@media screen and (min-width: 992px) {
   .woocommerce-shipping-fields h3,
   .woocommerce-billing-fields h3 {
     width: 100%;
@@ -2212,19 +2325,6 @@ body .gform_wrapper ul li.gfield {
   .woocommerce-checkout-review-order {
     width: 45%;
     float: right;
-  }
-}
-
-@media (min-width: 992px) {
-  .tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
-    font-size: 100px;
-    line-height: 1;
-    margin-top: 0px !important;
-  }
-
-  .how-it-works .col-md-6 {
-    width: 46%;
-    margin: 0 2%;
   }
 }
 
@@ -2314,15 +2414,15 @@ body .gform_wrapper ul li.gfield {
   }
 }
 
-@media (max-width: 991px) {
-  .tb-bg-video {
-    display: block;
+@media screen and (max-width: 992px) {
+  .custom-checkout h3 {
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 979px) {
-  .custom-checkout h3 {
-    width: 100%;
+@media (max-width: 991px) {
+  .tb-bg-video {
+    display: block;
   }
 }
 
