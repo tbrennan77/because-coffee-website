@@ -90,3 +90,13 @@
 			}
 	}
 }
+.custom-layout-about {
+	.site-header.standard {
+		background: transparent;
+		box-shadow: none;
+		border-bottom-width: 0px;
+	}
+	.site-header.standard .header-nav {
+		background: transparent;
+	}
+}
