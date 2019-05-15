@@ -222,6 +222,9 @@ h2.woocommerce-loop-product__title {
 		color: rgba(26,26,26,.7);
 	}
 }
+.woocommerce-variation.single_variation {
+	margin-bottom: 15px;
+}
 .tagged_as {
 	display: none;
 }
@@ -285,7 +288,57 @@ h2.woocommerce-loop-product__title,
 .woocommerce-tabs {
 	display: none;
 }
+.wcsatt-options-product {
+	list-style-type:none;
+    margin: 0px;
+    padding: 0px;
 
+    li {
+	    float: left;
+	    margin: 0 5px 0 0;
+	    position: relative;
+	    width: 50%;
+	    height: 80px;
+	    padding: 15px;
+	    padding-top: 20px;
+
+	    margin-right: 0px;
+	}
+	label {
+			    border-radius: 5px;
+	    -webkit-box-shadow: none;
+	    box-shadow: none;
+	}
+	label, 
+	input {
+	    display:block;
+	    position:absolute;
+	    top:0;
+	    left:0;
+	    right:0;
+	    bottom:0;
+	}
+
+	input[type="radio"] {
+	    opacity:0.011;
+	    z-index:100;
+	}
+
+	input[type="radio"]:checked + label {
+	    background:yellow;
+	}
+
+	label {
+	     padding:5px;
+	     border:1px solid #CCC; 
+	     cursor:pointer;
+	    z-index:90;
+	}
+
+	label:hover {
+	     background:#DDD;
+	}
+}
 .tb-product-loop-wrap {
 	li.product {
 		border: 1px solid #e9e9e9;
@@ -646,14 +699,17 @@ h2.woocommerce-loop-product__title,
 .switch-field label {
   float: left;
   width: 50%;
-  height: 60px;
-  padding: 15px;
-  padding-top: 20px;
+  height: 80px;
+  padding: 20px 15px 15px 15px;
+  padding-top: 26px !important;
   border-radius: 0px;
   -webkit-box-shadow: none;
   box-shadow: none;
   margin-right: 0px;
   margin-bottom: 0px;
+  font-size: 1em !important;
+  font-weight: bold;
+  letter-spacing: -.02em;
 }
 
 .switch-field label {
@@ -756,6 +812,15 @@ table.cart td.product-quantity .qty {
 	.shop_table.cart .product-subtotal {
 		text-align: left;
 	}
+	.shop_table.cart td.actions .coupon .input-text {
+		min-height: 45px !important;
+	}
+}
+.woocommerce-cart-form {
+	.switch-field label {
+		padding-top: 0px !important;
+		font-size: 13px !important;
+	}
 }
 .woocommerce-message {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#26b59d+0,ffffff+80&0.5+0,0+81 */
@@ -766,6 +831,25 @@ table.cart td.product-quantity .qty {
 	border-color: rgba(38, 181, 157, 1);
     color: rgba(38, 181, 157, 1);
 }
+.woof_sid_auto_shortcode.woof, 
+.woof_submit_search_form_container {
+	display: none !important;
+}
+.chosen-search {
+	input[type="text"] {
+		min-height: 30px !important;
+	}
+}
+ul.chosen-results {
+	padding: 7px !important;
+
+	li {
+	    line-height: 1.5 !important;
+	    margin: 0 0 5px 0 !important;
+	    padding: 5px !important;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	.tb-product-loop-wrap.grid-view.shop-columns-4 ul.products li.product {
 	    width: 31%;
