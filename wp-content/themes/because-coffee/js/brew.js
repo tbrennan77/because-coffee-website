@@ -1,3 +1,4 @@
+/*
 jQuery(document).ready(function( $ ){
     $(".site-header.transparent").hover(
       function() {
@@ -11,3 +12,4 @@ jQuery(document).ready(function( $ ){
       }
     );
 });
+*/
