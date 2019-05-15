@@ -98,15 +98,18 @@ function change_number_related_products( $args ) {
  return $args;
 }
 
-function prefix_add_my_widget() {
- echo '<div id="my-sidebar" class="sidebar">';
- echo "XXX";
- //dynamic_sidebar( 'my-sidebar' );
- echo '</div>';
+function shop_header_widget_right() {
+	register_sidebar( array(
+		'name'          => 'Shop header right widget',
+		'id'            => 'shop_header_widget_right',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="">',
+		'after_title'   => '</h2>',
+	) );
+
 }
-//add_action( 'woocommerce_before_shop_loop', 'prefix_add_my_widget'  );
-
-
+add_action( 'widgets_init', 'shop_header_widget_right' );
 
 function echo_qty_front_add_cart() {
 	echo '<div class="switch-title">Quantity</div>'; 
