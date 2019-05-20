@@ -128,12 +128,16 @@
 	    	display: inline-block;
 
 	    	a {
-	    		border: 2px solid #b54226;
+	    		border: 2px solid $color-accent;
 				padding: 5px 10px;
 				border-radius: 5px;
 				font-family: $font-stack;
 			    font-weight: bold;
 			    font-size: 14px;
+	    	}
+
+	    	a:hover {
+	    		border: 2px solid $color-accent !important;
 	    	}
 	    }
 	}
@@ -155,6 +159,15 @@
     	color: $color-accent;
 	}
 
+	.woocommerce-customer-details {
+		margin-top: 50px;
+	}
+
+	.woocommerce-order-details {
+		tfoot th {
+			border-top: 1px solid #f2f2f2; 
+		}
+	}
 	h2 {
 		font-size: 3rem;
     	line-height: 3.25rem;
