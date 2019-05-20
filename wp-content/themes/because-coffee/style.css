@@ -2,10 +2,9 @@
 
 /*
 Theme Name: Coffee Child
-Description: Custom theme based on Jumpstart Framework
-Author: Tim Brennan
+Description: Custom theme for Because Coffee based on Jumpstart Framework
+Author: Tim Brennan, Lead Dev for Go Media - https://trygomedia.com
 Template: jumpstart
-
 
 --------------------------------------------
 .. 01. General
@@ -137,7 +136,7 @@ li {
   font-size: 1.5em;
 }
 
-.site-main p a:not(.btn) {
+.site-main p a:not(.btn):not(.button) {
   background-color: transparent;
   color: inherit;
   text-decoration: none;
@@ -184,7 +183,7 @@ a.site-main:visited {
   word-wrap: break-word;
 }
 
-a:not(.btn):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):not(.woocommerce-loop-product__link):hover {
+a:not(.btn):not(.button):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):not(.woocommerce-loop-product__link):not(.tml-social-provider):hover {
   color: white;
   background: #b45526;
   border-bottom: 0px solid #b45526;
@@ -502,6 +501,7 @@ a:not(.btn):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):not(.woocommerce
   border-radius: 0xp;
   -webkit-box-shadow: none;
   box-shadow: none;
+  border-radius: 0px;
 }
 
 #gform_wrapper_3 #input_3_3:active,
@@ -612,8 +612,6 @@ a:not(.btn):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):not(.woocommerce
   min-height: 60px;
   font-size: 2em;
   padding: 5px 10px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .gform_wrapper .birthday {
@@ -626,8 +624,6 @@ a:not(.btn):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):not(.woocommerce
   font-size: 2em;
   padding: 5px 10px;
   font-size: 2em;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .tb-gforms-compat .gform_wrapper .gfield_checkbox li label,
@@ -817,7 +813,7 @@ a:not(.btn):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):not(.woocommerce
 .hr-theme-slash-2 .hr-icon {
   position: relative;
   top: 3px;
-  color: #ff0000;
+  color: #b45526;
 }
 
 .hr-theme-slash-2 .hr-icon img {
@@ -935,8 +931,8 @@ a:not(.btn):not(.menu-btn):not(.btn-navbar):not(.tb-image-logo):not(.woocommerce
 }
 
 .tb-product .button:hover {
-  color: white;
-  background-color: #b45526;
+  color: #b45526;
+  background-color: white;
 }
 
 h2.woocommerce-loop-product__title {
@@ -1090,6 +1086,10 @@ h2.woocommerce-loop-product__title {
   padding: 0px;
 }
 
+.tb-product-wrap .variations select {
+  max-width: 300px;
+}
+
 .woocommerce-variation-price h3 {
   font-size: 14px;
   text-shadow: 0 0px 0px rgba(0, 0, 0, 0), 0 0px 0px rgba(0, 0, 0, 0);
@@ -1098,6 +1098,7 @@ h2.woocommerce-loop-product__title {
 
 .woocommerce-variation.single_variation {
   margin-bottom: 15px;
+  display: block !important;
 }
 
 .tagged_as {
@@ -1229,7 +1230,7 @@ h2.woocommerce-loop-product__title,
 }
 
 .coffee_attributes .container .col-sm-4 {
-  width: calc(20% - 8px);
+  width: calc(33.33333% - 10px);
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 10px;
@@ -1239,6 +1240,9 @@ h2.woocommerce-loop-product__title,
 .coffee_attributes .container .col-sm-4 img {
   height: 80px;
   width: auto;
+  float: left;
+  position: relative;
+  left: 30px;
 }
 
 .coffee_attributes .container .col-sm-4 h3 {
@@ -1449,7 +1453,6 @@ h2.woocommerce-loop-product__title,
 
 .woocommerce .button {
   margin-left: 0px;
-  width: 200px;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: bold;
   font-size: 14px;
@@ -1683,8 +1686,8 @@ table.cart td.product-quantity .qty {
 }
 
 .woocommerce-cart-form .switch-field label {
-  padding-top: 0px !important;
-  font-size: 13px !important;
+  padding-top: 10px !important;
+  font-size: 12px !important;
 }
 
 .woocommerce-message {
@@ -1704,6 +1707,10 @@ table.cart td.product-quantity .qty {
   display: none !important;
 }
 
+.shop-header-widget-right {
+  float: left;
+}
+
 .chosen-search input[type="text"] {
   min-height: 30px !important;
 }
@@ -1716,6 +1723,33 @@ ul.chosen-results li {
   line-height: 1.5 !important;
   margin: 0 0 5px 0 !important;
   padding: 5px !important;
+}
+
+.woof_container_inner_clickheretosearchandfindawesomecoffee .chosen-container-multi .chosen-choices {
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.chosen-choices {
+  border-radius: 5px !important;
+  border: 2px solid #ccc !important;
+  font-size: 14px !important;
+  padding: 5px !important;
+}
+
+.chosen-container {
+  margin-top: 5px;
+  width: 350px !important;
+}
+
+.woocommerce ul.products,
+.woocommerce-page ul.products {
+  margin-top: 0px;
+}
+
+.tb-product-loop-wrap.grid-view.shop-columns-4 ul.products li.product {
+  clear: none !important;
 }
 
 .tml-action-login h1.entry-title,
@@ -1858,12 +1892,16 @@ ul.chosen-results li {
 }
 
 .woocommerce-MyAccount-navigation ul li a {
-  border: 2px solid #b54226;
+  border: 2px solid #b45526;
   padding: 5px 10px;
   border-radius: 5px;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: bold;
   font-size: 14px;
+}
+
+.woocommerce-MyAccount-navigation ul li a:hover {
+  border: 2px solid #b45526 !important;
 }
 
 .woocommerce-MyAccount-content .woocommerce-orders-table__cell .woocommerce-button {
@@ -1877,6 +1915,14 @@ ul.chosen-results li {
   font-size: 2rem;
   line-height: 2.25rem;
   color: #b45526;
+}
+
+.woocommerce-account .woocommerce-customer-details {
+  margin-top: 50px;
+}
+
+.woocommerce-account .woocommerce-order-details tfoot th {
+  border-top: 1px solid #f2f2f2;
 }
 
 .woocommerce-account h2 {
@@ -2216,6 +2262,19 @@ body .gform_wrapper ul li.gfield {
   background-color: rgba(255, 255, 255, 0.75) !important;
 }
 
+.footer-stay-up.contact-page {
+  padding-left: 0px;
+}
+
+.footer-stay-up.contact-page li a {
+  font-size: 1.5em;
+}
+
+.faux-border-right {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #fff), color-stop(50%, #ededed));
+  background: linear-gradient(to right, #fff 50%, #ededed 50%);
+}
+
 .blurred span {
   -webkit-filter: blur(6px);
   filter: blur(6px);
@@ -2276,6 +2335,51 @@ body .gform_wrapper ul li.gfield {
   background: transparent;
 }
 
+.brew-stuff-guides-section {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.brew-guides-promo-section img {
+  height: 150px;
+}
+
+.brew-guides-promo-section .element-columns .element {
+  margin-bottom: 10px;
+}
+
+.brew-guides-promo-section .headline {
+  font-family: "Roboto Slab", serif;
+  color: #b45526;
+}
+
+.brew-guides-promo-section .desc {
+  font-size: .85em;
+  letter-spacing: -.02em;
+}
+
+.brew-guides-promo-section .col-md-2,
+.brew-guides-promo-section .col-md-3 {
+  width: 20% !important;
+}
+
+.brew-guides-promo-section .btn {
+  padding: 5px 10px;
+  font-size: .85em;
+}
+
+.how-to-time {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.how-to-time strong {
+  background: #f5f5f5;
+  padding: 5px 20px;
+}
+
 @media (min-width: 768px) {
   .tb-jumbotron .tb-text-block-wrap.text-large .tb-text-block {
     font-size: 140px;
@@ -2290,10 +2394,12 @@ body .gform_wrapper ul li.gfield {
 @media screen and (min-width: 768px) {
   .tb-product-loop-wrap.grid-view.shop-columns-4 ul.products li.product {
     width: 31%;
+    clear: none !important;
   }
 
   .tb-product-loop-wrap.grid-view.shop-columns-3 ul.products li.product {
     width: 31%;
+    clear: none !important;
   }
 }
 
@@ -2378,6 +2484,14 @@ body .gform_wrapper ul li.gfield {
     font-size: 1em;
   }
 
+  .tb-product-wrap .variations select {
+    max-width: 100%;
+  }
+
+  .tawcvs-swatches {
+    max-width: 100%;
+  }
+
   .coffee_attributes .container .col-sm-4 {
     width: calc(100% - 40px);
     margin: 20px;
@@ -2400,6 +2514,24 @@ body .gform_wrapper ul li.gfield {
     margin: 0px;
   }
 
+  .switch-field {
+    max-width: 100%;
+  }
+
+  .single-product .switch-field {
+    max-width: 100%;
+  }
+
+  .chosen-container {
+    width: 100% !important;
+    margin-top: 5px;
+  }
+
+  .woocommerce ul.products,
+  .woocommerce-page ul.products {
+    margin-top: 100px;
+  }
+
   .tml-button {
     max-width: none;
     width: 100%;
@@ -2411,6 +2543,15 @@ body .gform_wrapper ul li.gfield {
 
   .hero-about .jumbotron-wrap {
     top: 200px !important;
+  }
+
+  .brew-stuff-guides-section {
+    max-width: 100%;
+  }
+
+  .brew-guides-promo-section .col-md-2,
+  .brew-guides-promo-section .col-md-3 {
+    width: 100% !important;
   }
 }
 
@@ -2511,10 +2652,6 @@ body .gform_wrapper ul li.gfield {
     margin: 0 auto;
   }
 
-  .tawcvs-swatches {
-    max-width: 100%;
-  }
-
   .actions .button {
     width: 100%;
   }
@@ -2527,10 +2664,6 @@ body .gform_wrapper ul li.gfield {
     padding: 0;
     font-weight: normal;
     font-size: .9em;
-  }
-
-  .switch-field {
-    max-width: 100%;
   }
 
   .woocommerce-cart .switch-field {
