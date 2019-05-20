@@ -40,6 +40,16 @@
 .contact-form-area {
 	background-color: rgba(255, 255, 255, 0.75) !important;
 }
+.footer-stay-up.contact-page {
+	padding-left: 0px;
+
+	li a {
+		font-size: 1.5em;
+	}
+}
+.faux-border-right {
+    background: linear-gradient(to right,#fff 50%,#ededed 50%);
+}
 .blurred span {
   filter: blur(6px);
   /* As pointed out by Alexander Erlandsson (@alexerlandsson), for situations that require better cross-browser support, the blur effect is easily reproduced with transpartent text + text-shadow
@@ -99,4 +109,57 @@
 	.site-header.standard .header-nav {
 		background: transparent;
 	}
+}
+.brew-stuff-guides-section {
+	max-width: 60%; 
+	margin: 0 auto;
+
+	@media (max-width: 992px) {
+		max-width: 100%;
+	}
+
+	img {
+		@media (max-width: 992px) {
+			//display: none;
+		}	
+	}
+}
+.brew-guides-promo-section {
+	img {
+		height: 150px;
+	}
+	.element-columns .element {
+		margin-bottom: 10px;
+	}
+	.headline {
+		font-family: $font-roboto;
+		color: $color-accent;
+	}
+	.desc {
+		font-size: .85em;
+		letter-spacing: -.02em;
+	}
+	.col-md-2,
+	.col-md-3 {
+		width: 20% !important;
+
+		@media (max-width: 992px) {
+			width: 100% !important;
+		}
+	}
+	.btn {
+	    padding: 5px 10px;
+    	font-size: .85em;
+	}
+}
+.how-to-time{
+	background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 10px;
+
+    strong {
+    	background: #f5f5f5;
+    	padding: 5px 20px;
+    }
 }
