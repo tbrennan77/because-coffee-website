@@ -23,7 +23,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <div class="woocommerce-result-count container">
 	<div class="row">
-		<div class="col-lg-6 col-xs-12 px-0">
+		<div class="col-xs-12 px-0">
+			<p>
 			<?php
 			if ( $total <= $per_page || -1 === $per_page ) {
 				/* translators: %d: total results */
@@ -35,9 +36,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 				printf( _nx( 'Showing the single result', 'Showing %1$d&ndash;%2$d of %3$d results', $total, 'with first and last result', 'woocommerce' ), $first, $last, $total );
 			}
 			?>
-		</div>
-		<div class="col-lg-6 col-xs-12 px-0">
-			<div id="" class="widget-area" role="complementary">
+			</p>
+			<div id="" class="widget-area shop-header-widget-right" role="complementary">
 				<?php dynamic_sidebar( 'shop_header_widget_right' ); ?>
 			</div><!-- #primary-sidebar -->
 		</div>
