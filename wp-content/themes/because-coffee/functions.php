@@ -120,3 +120,24 @@ add_action( 'woocommerce_before_add_to_cart_quantity', 'echo_qty_front_add_cart'
 
 // Remove default woocommerce sorting dropdown
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+
+
+add_action( 'wp_footer', 'cart_refresh_update_qty' ); 
+ 
+function cart_refresh_update_qty() { 
+   if (is_cart()) { 
+      ?> 
+      <script type="text/javascript"> 
+         jQuery('div.woocommerce').on('click', '.minus', function(){ 
+            jQuery("[name='update_cart']").trigger("click"); 
+         });
+         jQuery('div.woocommerce').on('click', '.plus', function(){ 
+            jQuery("[name='update_cart']").trigger("click"); 
+         }); 
+         jQuery('div.woocommerce').on('change', "[type='radio']", function(){ 
+            jQuery("[name='update_cart']").trigger("click"); 
+         });
+      </script> 
+      <?php 
+   } 
+}
