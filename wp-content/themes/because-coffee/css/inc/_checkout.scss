@@ -99,7 +99,8 @@
 }
 .woocommerce-order-received {
 	.woocommerce-order-details__title, 
-	.woocommerce-column__title {
+	.woocommerce-column__title,
+    .woocommerce-table--order-details h2 {
 		font-size: 2rem;
     	line-height: 2.25rem;
     	color: $color-accent;
