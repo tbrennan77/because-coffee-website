@@ -141,3 +141,16 @@ function cart_refresh_update_qty() {
       <?php 
    } 
 }
+
+function remove_tml_profile_fields() {
+  tml_remove_form_field( 'profile', 'nickname' );
+  tml_remove_form_field( 'profile', 'display_name' );
+  tml_remove_form_field( 'profile', 'description' );
+  tml_remove_form_field( 'profile', 'avatar' );
+  tml_remove_form_field( 'profile', 'contact_info_section_header' );
+  tml_remove_form_field( 'profile', 'name_section_header' );
+  tml_remove_form_field( 'profile', 'account_management_section_header' );
+  tml_remove_form_field( 'profile', 'about_yourself_section_header' );
+  tml_remove_form_field( 'profile', 'url' );
+}
+add_action( 'init', 'remove_tml_profile_fields' );
