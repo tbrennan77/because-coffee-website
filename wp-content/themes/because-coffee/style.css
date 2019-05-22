@@ -1748,7 +1748,8 @@ ul.chosen-results li {
   margin-top: 0px;
 }
 
-.tb-product-loop-wrap.grid-view.shop-columns-4 ul.products li.product {
+.tb-product-loop-wrap.grid-view.shop-columns-4 ul.products li.product,
+.tb-product-loop-wrap.grid-view.shop-columns-3 ul.products li.product {
   clear: none !important;
 }
 
@@ -1889,6 +1890,7 @@ ul.chosen-results li {
 
 .woocommerce-MyAccount-navigation ul li {
   display: inline-block;
+  min-height: 40px;
 }
 
 .woocommerce-MyAccount-navigation ul li a {
@@ -2053,7 +2055,8 @@ ul.chosen-results li {
 }
 
 .woocommerce-order-received .woocommerce-order-details__title,
-.woocommerce-order-received .woocommerce-column__title {
+.woocommerce-order-received .woocommerce-column__title,
+.woocommerce-order-received .woocommerce-table--order-details h2 {
   font-size: 2rem;
   line-height: 2.25rem;
   color: #b45526;
@@ -2372,6 +2375,7 @@ body .gform_wrapper ul li.gfield {
   background-color: transparent;
   position: absolute;
   top: 0;
+  left: 0px;
   right: 10px;
 }
 
@@ -2492,6 +2496,10 @@ body .gform_wrapper ul li.gfield {
     max-width: 100%;
   }
 
+  .coffee_attributes .container .col-sm-4 img {
+    left: 10px;
+  }
+
   .coffee_attributes .container .col-sm-4 {
     width: calc(100% - 40px);
     margin: 20px;
@@ -2552,6 +2560,11 @@ body .gform_wrapper ul li.gfield {
   .brew-guides-promo-section .col-md-2,
   .brew-guides-promo-section .col-md-3 {
     width: 100% !important;
+  }
+
+  .how-to-time {
+    right: 0px;
+    left: 10px;
   }
 }
 
