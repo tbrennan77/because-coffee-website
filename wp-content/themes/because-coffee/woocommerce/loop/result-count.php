@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <div class="woocommerce-result-count container">
 	<div class="row">
-		<div class="col-xs-12 px-0">
+		<div class="col-xs-12 col-lg-4 px-0">
 			<p>
 			<?php
 			if ( $total <= $per_page || -1 === $per_page ) {

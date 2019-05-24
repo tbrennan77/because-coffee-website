@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div class="container">
 		<div class="row">
 			<?php if( get_field('flavor_notes_image') ): ?>
-			<div class="col-sm-4 text-center coffee_attribute">
+			<div class="col-sm-4 text-center coffee_attribute flavor_notes">
 				<img src="<?php the_field('flavor_notes_image'); ?>" alt="" />
 				<h3>Flavor Notes</h3>
 				<h2><?php the_field('flavor_notes'); ?></h2>
