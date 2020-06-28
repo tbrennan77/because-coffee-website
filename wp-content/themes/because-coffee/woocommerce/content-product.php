@@ -49,11 +49,15 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	$value = get_field( "tasting_summary" );
 	$color = get_field( "tasting_summary_color" );
 
-	echo "<span class=\"tasting_summary\" style=\"color: ".$color."\">".$value."</span>"; 
+	if($value) {
+		echo "<span class=\"tasting_summary\" style=\"color: ".$color."\">".$value."</span>"; 
+	}
 
 	$field = get_field('roast_level');
 
-	echo "<span class=\"roast_level ".$field['value']."\">".$field['label']."</span>"; 
+	if(get_field('roast_level')) {
+		echo "<span class=\"roast_level ".$field['value']."\">".$field['label']."</span>"; 
+	}
 
 	do_action( 'woocommerce_shop_loop_item_title' );
 
